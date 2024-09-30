@@ -1,0 +1,45 @@
+footer {
+    background: linear-gradient(1deg, #000000c8 10%, #1d091de2 10%, #83339edc 150%);
+    color: white;
+    text-align: center;
+    padding: 5px 0; /* Mantém padding vertical para o footer */
+    bottom: 0;
+    width: 100%;
+    height: 85px;
+}
+
+#foter_table {
+    margin: auto;
+    width: 50%;
+    padding: 0; /* Remove padding da tabela */
+    color: rgb(255, 255, 255);
+    border-collapse: collapse; /* Colapsa as bordas para eliminar espaços */
+}
+
+#foter_td {
+    padding: 0; /* Remove o padding interno das células para eliminar espaço vertical */
+    vertical-align: middle; /* Alinha o conteúdo verticalmente ao centro */
+}
+
+#foter_a {
+    color: #ffffff;
+    text-decoration: none;
+    display: inline-block; /* Permite que o link ocupe espaço como um bloco inline */
+}
+
+#foter_a:hover {
+    text-decoration: underline;
+}
+
+#zap {
+    margin-right: 10px;
+    max-width: 22px;
+}
+
+#insta {
+    max-width: 22px;
+}
+
+#logo_rod {
+    max-width: 90px;
+}

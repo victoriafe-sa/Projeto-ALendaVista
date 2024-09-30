@@ -1,0 +1,71 @@
+
+.caixa{
+    background-color:#250631;
+    border-radius: 40px;
+    width: 300px;
+    height:300px;
+    text-align: center;
+    padding: 35px 20px;
+    margin: 10px;
+    margin-top: 20px;
+}
+#titulo{
+    font-weight: 300;
+    font-family:'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 45px;
+    flex-wrap: wrap;
+    margin-top: -10px;
+    
+}
+#text{
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    font-size: 22px;
+    height: 25px;
+    width: flex;
+    margin: 10px 0;
+    margin-top: 40px;
+    
+}
+.botao{
+    background-color:#431155;
+    border-radius: 40px;
+    text-align: center;
+    width: 350px;
+    height: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.botao a{
+    color: rgb(200, 111, 223);
+    font-size: 20px;
+}
+
+h2{
+    color: white;
+    font-weight: 300;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 50px;
+
+}
+.proposta-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Espaça os itens igualmente */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas se necessário */
+    margin: 20px; /* Margem externa para o contêiner */
+}
+
+.botao-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    margin-top: 20px; /* Margem superior para espaçamento */
+}

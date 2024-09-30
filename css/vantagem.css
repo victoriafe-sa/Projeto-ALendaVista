@@ -1,0 +1,61 @@
+.vantagem_sec{
+    margin-top: 30px;
+}
+/* Mantendo os estilos gerais */
+#vantagens {
+    color: #000000;
+    margin: auto;
+    width: 1200px;
+    padding: 40px;
+    border-radius: 50px;
+    display: flex;
+}
+
+.vantagem img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    
+}
+
+.vantagem h3 {
+    font-size: 34px;
+    margin-bottom: 18px;
+    color: #FFFFFF;
+}
+
+.vantagem p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    /* Cor do texto */
+}
+#ultimo{
+    margin-bottom: 0;
+}
+
+.vantagem {
+    display: flex;
+    align-items: flex-start;
+    /* Alinha os itens verticalmente no centro */
+    justify-content: flex-end;
+    /* Alinha os itens horizontalmente à direita */
+    gap: 10px;
+    /* Espaçamento entre os elementos */
+}
+
+.vantag_nome {
+    width: 458px;
+    height: 239px;
+    color: #FFF;
+    font-family: 'Limelight', serif;
+    font-size: 60px;
+    font-weight: bolder;
+    margin-right: 90px;
+    margin-top: 80px;
+}
+
+#vant {
+    flex: 2; /* Faz com que essa div ocupe mais espaço em relação à div do título */
+}

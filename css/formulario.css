@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    color: #000000;
+    margin: auto;
+    max-width: 1000px;
+    padding: 40px;
+    background: linear-gradient(249deg, #2F0341 0%, #764E90 100%);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.text-container {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.text-container h1 {
+    width: 458px;
+    height: 239px;
+    color: #FFF;
+    font-family: 'Limelight', serif;
+    font-size: 70px;
+    font-weight: bolder;
+    margin-right: 50px;
+    margin-top: -80px;
+}
+
+.form-container {
+    flex: 1;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: rgb(39, 15, 50);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: rgb(39, 15, 50);
+    border: none;
+    border-radius: 5px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 8px #884ac4;
+}
+button {
+    width: 50%;
+    padding: 12px;
+    background-color:rgb(11, 5, 15);
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #874ac4bd;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #884ac4;
+}
+
+
+.divisao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divisao img{
+    max-width: 400px;
+    height: 200px;
+}
+.button-container {
+    display: flex; /* Mantém o flexbox */
+    gap: 10px; /* Adiciona espaço entre os botões */
+}
+
+button {
+    flex: 1; /* Permite que os botões cresçam igualmente */
+    padding: 12px; /* Mantém o padding consistente */
+    margin: 0; /* Remove o margin auto */
+    min-width: 220px; /* Adiciona uma largura mínima para uniformidade */
+}

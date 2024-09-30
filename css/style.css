@@ -1,0 +1,318 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url(../fonte/Libre_Baskerville/LibreBaskerville-Bold.ttf) format('truetype'),
+        url(../fonte/Libre_Baskerville/LibreBaskerville-Italic.ttf) format('truetype'),
+        url(../fonte/Libre_Baskerville/LibreBaskerville-Regular.ttf) format('truetype');
+}
+
+body {
+    background: linear-gradient(125deg, #000000 0%, #1D091D 35%, #83339E 100%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style Header,nav*/
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 35px;
+}
+
+li {
+
+    margin: 10px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#im_logo {
+    width: 250px;
+    height: 250px;
+    margin-top: -40px;
+}
+
+.nome_site {
+    font-size: 40px;
+    margin-left: 50px;
+    margin-top: 24px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: white;
+
+}
+
+.naveg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin-top: -65px;
+    font-family: 'MinhaFonte';
+}
+
+.menu ul li {
+    display: flex;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-family: 'MinhaFonte';
+    font-size: 20px;
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 3px;
+}
+
+.logo,
+.naveg {
+    flex-grow: 1;
+    display: flex;
+}
+
+/* Style main/ section*/
+.texto_anuncio {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.anuncio {
+    display: flex;
+}
+
+.img_anuncio {
+    display: flex;
+    width: auto;
+    height: auto;
+    left: 500px;
+
+}
+
+.img_anuncio li {
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+
+}
+
+.Carrocel {
+    display: flex;
+    width: 60%;
+    height: 60%;
+    justify-content: flex-end;
+}
+
+.img_anuncio li {
+    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+}
+
+.content_slogan {
+    display: flex;
+    flex-direction: column; /* Alinha os elementos em coluna, se necessário */
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(1deg, #00000072 0%, #1d091d95 0%, #83339ed7 150%);
+    margin-top: 2.3%;
+    margin-left: 35%; /* Empurra para a direita */
+    justify-content: center; /* Centraliza verticalmente dentro da content_slogan */
+    border-radius: 5%;
+}
+.slogan {
+    display: flex;
+    flex-direction: column; /* Coloca o título e o texto em coluna */
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo */
+    height: 100%; /* Ocupa toda a altura disponível */
+}
+#titulo_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    margin-top: -100px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+#text_card{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    margin-bottom: 50px;  
+}
+.card-tam{
+    margin-left: 40px;
+    height: 50px;
+    width: 450px;
+}
+/*buton*/
+.button-servico{
+    margin-top: 75px;
+    margin-bottom: -100px;
+}
+.servico_slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    background-color: rgb(31, 31, 31);
+    color: rgb(210, 149, 210);
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.servico_slogan:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    background-color: rgba(255, 255, 255, 0.428);
+    color: rgb(8, 8, 8);
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.anuncio {
+    display: flex;
+    /* Utiliza flexbox para alinhar os itens */
+}
+
+.texto_anuncio {
+    display: flex;
+    /* Utiliza flexbox para alinhar os itens dentro do texto */
+
+}
+
+.img_anuncio {
+    margin-left: 20%;
+    /* Move a imagem para a direita */
+    width: 100px;
+    /* Defina a largura desejada */
+    height: auto;
+    /* Mantém a proporção da imagem */
+}
+/*Styler_Proposta*/
+.poroposta{
+    display: flex;
+}
+#titulo_proposta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    margin-top: 52px;
+    margin-left: 40px;
+}
+.content_criacao{
+    display: flex;
+    background-color: #83339E;
+    width: 250px;
+    height: 300px;
+    border-radius: 35px;
+    margin-left: 20%;
+}
+#titulo_criacao{
+    display: flex;
+    font-size: 25px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: blue;
+    justify-content: center;
+    margin-left: 60px;
+
+}
+#text_criacao{
+    display: flex;
+    font-size: 10px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: white;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Coloca logo e menu em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Alinha links em coluna */
+        padding: 10px; /* Espaçamento em volta da lista */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Margem vertical */
+    }
+
+    .anuncio {
+        padding: 10px; /* Ajusta padding */
+    }
+
+    .proposta-container {
+        flex-direction: column; /* Empilha caixas em coluna */
+        align-items: center; /* Centraliza caixas */
+    }
+
+    .caixa {
+        width: 90%; /* Largura da caixa em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo_card {
+        font-size: 24px; /* Ajusta tamanho da fonte */
+    }
+
+    #text_card {
+        font-size: 16px; /* Ajusta tamanho da fonte */
+    }
+
+    .servico_slogan {
+        font-size: 14px; /* Ajusta tamanho do botão */
+    }
+
+    footer {
+        padding: 10px; /* Ajusta padding do rodapé */
+    }
+}
