@@ -136,7 +136,7 @@ a {
     flex-direction: column; /* Alinha os elementos em coluna, se necessário */
     width: 500px;
     height: 500px;
-    background: linear-gradient(100deg, #AF74AE 0%, #FEDBFC 89%);
+    background: linear-gradient(100deg, #AF74AE 20%, #FEDBFC 89%);
     margin-top: 2.3%;
     margin-left: 35%; /* Empurra para a direita */
     justify-content: center; /* Centraliza verticalmente dentro da content_slogan */
