@@ -85,31 +85,30 @@ a {
 
 /* Style main/ section*/
 
-.img_anuncio li {
-    background-color: aliceblue;
+.content_slogan {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(100deg, #AF74AE 20%, #fbbff8 89%);
+    margin-top: 20px; /* Margem simplificada */
+    margin-left: 35%;
+    border-radius: 5%;
+    color: #770d60;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.img_anuncio img{
     width: 500px;
     height: 500px;
 }
 
-.content_slogan {
-    display: flex;
-    flex-direction: column; /* Alinha os elementos em coluna, se necessário */
-    width: 500px;
-    height: 500px;
-    background: linear-gradient(100deg, #AF74AE 20%, #fbbff8 89%);
-    margin-top: 2.3%;
-    margin-left: 35%; /* Empurra para a direita */
-    justify-content: center; /* Centraliza verticalmente dentro da content_slogan */
-    border-radius: 5%;
-    color: #770d60;
-}
-.slogan {
-    display: flex;
-    flex-direction: column; /* Coloca o título e o texto em coluna */
-    justify-content: center;
-    align-items: center; /* Centraliza o conteúdo */
-    height: 100%; /* Ocupa toda a altura disponível */
-}
+
 #titulo_card{
     display: flex;
     justify-content: center;
@@ -171,17 +170,10 @@ a {
     
 }
 
-.anuncio {
-    display: flex;
-}
 
-.texto_anuncio {
-    display: flex;
 
-}
 
 .img_anuncio {
-    margin-left: 20%;
     width: 100px;
     height: auto;
 }
