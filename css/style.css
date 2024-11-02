@@ -17,12 +17,9 @@ ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 0;
-    margin-top: 35px;
 }
 
 li {
-
     margin: 10px;
 }
 
@@ -36,22 +33,23 @@ a {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    background-color: #755086;
 }
 
 #im_logo {
-    width: 250px;
-    height: 250px;
-    margin-top: -40px;
+    margin-top: -20px;
+    width: 150px;
 }
 
 .nome_site {
     font-size: 40px;
     margin-left: 50px;
-    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'MinhaFonte';
     font-style: italic;
     color: white;
-
 }
 
 .naveg {
@@ -62,22 +60,15 @@ a {
 }
 
 .menu ul {
-    display: flex;
     list-style: none;
-    margin-top: -65px;
+    
     font-family: 'MinhaFonte';
+    
 }
 
-.menu ul li {
-    display: flex;
-}
-
-.menu ul li a {
-    color: white;
-    text-decoration: none;
+.menu ul li a {   
     margin-left: 20px;
-    font-family: 'MinhaFonte';
-    font-size: 20px;
+    
 }
 
 .menu ul li a:hover {
@@ -93,37 +84,12 @@ a {
 }
 
 /* Style main/ section*/
-.texto_anuncio {
-    display: flex;
-    width: 100%;
-    height: 100%;
-}
 
-.anuncio {
-    display: flex;
-}
 
-.img_anuncio {
-    display: flex;
-    width: auto;
-    height: auto;
-    left: 500px;
 
-}
 
-.img_anuncio li {
-    background-color: aliceblue;
-    width: 500px;
-    height: 500px;
 
-}
 
-.Carrocel {
-    display: flex;
-    width: 60%;
-    height: 60%;
-    justify-content: flex-end;
-}
 
 .img_anuncio li {
     background-color: aliceblue;
@@ -141,7 +107,7 @@ a {
     margin-left: 35%; /* Empurra para a direita */
     justify-content: center; /* Centraliza verticalmente dentro da content_slogan */
     border-radius: 5%;
-    color: black;
+    color: #770d60;
 }
 .slogan {
     display: flex;
@@ -178,6 +144,7 @@ a {
 .button-servico{
     margin-top: 75px;
     margin-bottom: -100px;
+    
 }
 .servico_slogan{
     display: flex;
@@ -186,12 +153,13 @@ a {
     font-size: 20px;
     font-family: 'MinhaFonte';
     font-style: italic;
-    background-color: rgb(31, 31, 31);
-    color: rgb(210, 149, 210);
+    border: 2px solid #770d60;
+    color: rgb(36, 6, 36);
     height: 70px;
     width: 200px;
     border-radius: 20px;
     margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.428);
 }
 .servico_slogan:hover{
     display: flex;
@@ -200,12 +168,13 @@ a {
     font-size: 20px;
     font-family: 'MinhaFonte';
     font-style: italic;
-    background-color: rgba(255, 255, 255, 0.428);
+    background-color: rgba(252, 220, 255, 0.428);
     color: rgb(8, 8, 8);
     height: 70px;
     width: 200px;
     border-radius: 20px;
     margin-top: 10px;
+    
 }
 
 .anuncio {
