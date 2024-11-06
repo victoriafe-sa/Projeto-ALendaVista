@@ -84,101 +84,61 @@ a {
 }
 
 /* Style main/ section*/
+.anuncio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+}
 
-.content_slogan {
-    width: 500px;
-    height: 500px;
+.img_anuncio{
+    margin-right: 50px;
+}
+.img_anuncio img {
+    width: 400px;
+    height: 400px;
+}
+
+.slogan_info{
+    width: 400px;
+    height: 400px;
     background: linear-gradient(100deg, #AF74AE 20%, #fbbff8 89%);
-    margin-top: 20px; /* Margem simplificada */
-    margin-left: 35%;
     border-radius: 5%;
     color: #770d60;
-}
-
-.slogan {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-left: 55px;
 }
 
-.img_anuncio img{
-    width: 500px;
-    height: 500px;
+.slogan-text{
+    margin: 50px;
 }
 
+.slogan-text h1{
+    font-size: 38px;
+} 
 
-#titulo_card{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    font-family: 'MinhaFonte';
-    font-style: italic;
-    margin-top: -100px;
-    margin-bottom: 40px;
-    margin-left: 40px;
-}
-#text_card{
-    display: flex;
-    justify-content: center;
+.slogan-text p{
     font-size: 22px;
-    font-family: 'MinhaFonte';
-    font-style: italic;
-    margin-bottom: 50px;  
 }
-.card-tam{
-    margin-left: 40px;
-    height: 50px;
-    width: 450px;
-}
-/*buton*/
+
 .button-servico{
-    margin-top: 75px;
-    margin-bottom: -100px;
-    
+    display: flex;
+    justify-content: center;
 }
 .servico_slogan{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-size: 20px;
-    font-family: 'MinhaFonte';
     font-style: italic;
     border: 2px solid #770d60;
     color: rgb(36, 6, 36);
-    height: 70px;
-    width: 200px;
     border-radius: 20px;
-    margin-top: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.428);
+    padding: 12px 15px;
 }
 .servico_slogan:hover{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 20px;
-    font-family: 'MinhaFonte';
-    font-style: italic;
     background-color: rgba(252, 220, 255, 0.428);
-    color: rgb(8, 8, 8);
-    height: 70px;
-    width: 200px;
-    border-radius: 20px;
-    margin-top: 10px;
-    
-}
-
-
-
-
-.img_anuncio {
-    width: 100px;
-    height: auto;
 }
 /*Styler_Proposta*/
-.poroposta{
+.proposta{
     display: flex;
 }
 #titulo_proposta{
