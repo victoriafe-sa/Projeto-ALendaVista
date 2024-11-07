@@ -82,7 +82,6 @@ a {
     flex-grow: 1;
     display: flex;
 }
-
 .divisao{
     display: flex;
     align-items: center;
@@ -92,12 +91,8 @@ a {
     max-width: 400px;
     height: 200px;
 }
-
 /* Style anuncio*/
 .anuncio{
-    display: flex;
-    justify-content: center;
-    align-items: center;
     margin: 100px;
 }
 
@@ -108,16 +103,24 @@ a {
     width: 400px;
     height: 400px;
 }
-
+video {
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+}
+#vi{
+    position: absolute;
+    height: 100%;
+}
 .slogan_info{
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(100deg, #AF74AE 20%, #fbbff8 89%);
     background-clip: url(Desig.mp4);
     border-radius: 5%;
-    color: #770d60;
-    align-items: center;
+    color: #ffffff;
     margin-left: 55px;
+    position: relative;
 }
 
 .slogan-text{
@@ -130,23 +133,23 @@ a {
 
 .slogan-text p{
     font-size: 22px;
+    margin-top: 50px;
 }
 
 .button-servico{
-    display: flex;
-    justify-content: center;
+    margin: 80px;
 }
 .servico_slogan{
     font-size: 20px;
     font-style: italic;
-    border: 2px solid #770d60;
-    color: rgb(36, 6, 36);
+    border: 2px solid #ffffff;
+    color: rgb(194, 150, 194);
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.428);
     padding: 12px 15px;
 }
 .servico_slogan:hover{
-    background-color: rgba(252, 220, 255, 0.428);
+    background-color: rgba(244, 120, 255, 0.428);
 }
 /*Styler_Proposta*/
 
