@@ -1,13 +1,13 @@
 
 .caixa{
-    background-color:#511a6bbd;
+    background-color: rgba(114, 39, 111, 0.712);
     border-radius: 40px;
     width: 300px;
     height:300px;
     text-align: center;
     padding: 35px 20px;
-    margin: 10px;
-    margin-top: 20px;
+    margin: 20px;
+    
 }
 #titulo{
     font-weight: 300;
@@ -30,7 +30,7 @@
     
 }
 .botao{
-    background-color:#431155;
+    background-color:#755086;
     border-radius: 40px;
     text-align: center;
     width: 350px;
@@ -45,7 +45,7 @@
 }
 
 .botao a{
-    color: rgb(200, 111, 223);
+    color: #e9c9f8;
     font-size: 20px;
 }
 

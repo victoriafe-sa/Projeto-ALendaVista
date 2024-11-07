@@ -88,16 +88,6 @@ input:focus, textarea:focus {
     box-shadow: 0 0 8px #884ac4;
 }
 
-
-.divisao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.divisao img{
-    max-width: 400px;
-    height: 200px;
-}
 .button-container {
     display: flex; /* Mantém o flexbox */
     gap: 10px; /* Adiciona espaço entre os botões */

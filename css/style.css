@@ -83,7 +83,17 @@ a {
     display: flex;
 }
 
-/* Style main/ section*/
+.divisao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.divisao img{
+    max-width: 400px;
+    height: 200px;
+}
+
+/* Style anuncio*/
 .anuncio{
     display: flex;
     justify-content: center;
@@ -103,6 +113,7 @@ a {
     width: 400px;
     height: 400px;
     background: linear-gradient(100deg, #AF74AE 20%, #fbbff8 89%);
+    background-clip: url(Desig.mp4);
     border-radius: 5%;
     color: #770d60;
     align-items: center;
@@ -138,46 +149,6 @@ a {
     background-color: rgba(252, 220, 255, 0.428);
 }
 /*Styler_Proposta*/
-.proposta{
-    display: flex;
-}
-#titulo_proposta{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 35px;
-    font-family: 'MinhaFonte';
-    font-style: italic;
-    margin-top: 52px;
-    margin-left: 40px;
-}
-.content_criacao{
-    display: flex;
-    background-color: #83339E;
-    width: 250px;
-    height: 300px;
-    border-radius: 35px;
-    margin-left: 20%;
-}
-#titulo_criacao{
-    display: flex;
-    font-size: 25px;
-    font-family: 'MinhaFonte';
-    font-style: italic;
-    color: blue;
-    justify-content: center;
-    margin-left: 60px;
-
-}
-#text_criacao{
-    display: flex;
-    font-size: 10px;
-    font-family: 'MinhaFonte';
-    font-style: italic;
-    color: white;
-    justify-content: center;
-    margin-right: 50px;
-}
 
 
 /*RESPONSIVIDADE*/

@@ -7,12 +7,12 @@
     display: flex;
     align-items: center;
     font-family: 'Times New Roman', Times, serif;
-    margin-top: 100px;
     justify-content: center;
 }
 #nome-banner {
     font-size: 70px;
     font-weight: bold;
+    margin-top: -90px;
 }
 #titulo-banner{
     width: 700px;
@@ -21,9 +21,7 @@
 #texto-banner{
     margin-right: 100px;
 }
-p{
-    font-size: 30px;
-}
+
 #img-banner img{
     width: 500px;
     height: auto;
@@ -56,9 +54,42 @@ p{
 
 #banner p{
     margin-top: 10px;
-    font-size: 30px;
+    font-size: 22px;
     color: rgba(255, 255, 255, 0.83);
     font-weight: 300;
     text-align: justify;
     margin-bottom: 20px;
 }
+
+#botao-fixo {
+    position: fixed;
+    bottom: 20px; /* Distância do fundo da página */
+    right: -400px;  /* Distância da direita da página */
+    z-index: 1000; /* Garante que o botão ficará sobre outros elementos */
+    
+}
+
+#botao-fixo button {
+    background-color: #663b97; /* Cor de fundo do botão */
+    color: white;  /* Cor do texto do botão */
+    border: none;
+    padding: 15px;
+    border-radius: 25px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destacar o botão */
+    transition: background-color 0.3s ease; /* Animação suave para hover */
+    width: 20%;
+    right: 0;
+}
+
+#botao-fixo button:hover {
+    background-color: #755086; /* Cor de fundo quando o mouse passa sobre o botão */
+}
+
+button img{
+    width: 50%;
+    height: auto;
+    right: 0;
+}
+

@@ -14,8 +14,8 @@
 .vantagem img {
     width: 24px;
     height: 24px;
-    margin-right: 10px;
-    
+    margin-right: 5px;
+    margin-top: 41px;
 }
 
 .vantagem h3 {
@@ -29,6 +29,7 @@
     margin: 0;
     flex-wrap: wrap;
     margin-bottom: 15px;
+    font-size: 28px;
     /* Cor do texto */
 }
 #ultimo{
