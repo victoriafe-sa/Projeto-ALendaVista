@@ -1,0 +1,262 @@
+body {
+    background: linear-gradient(125deg, #FEDBFC, #521A6B 89%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style Header,nav*/
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #755086;
+}
+
+#im_logo {
+    margin-top: -20px;
+    width: 150px;
+}
+
+.nome_site {
+    font-size: 40px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: white;
+}
+
+.naveg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.menu ul {
+    list-style: none;
+    
+    font-family: 'MinhaFonte';
+    
+}
+
+.menu ul li a {   
+    margin-left: 20px;
+    
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 3px;
+}
+
+.logo,
+.naveg {
+    flex-grow: 1;
+    display: flex;
+}
+
+/* Style main/ section*/
+
+.content_slogan {
+    width: 500px;
+    height: 500px;
+    background: linear-gradient(100deg, #AF74AE 20%, #fbbff8 89%);
+    margin-top: 20px; /* Margem simplificada */
+    margin-left: 35%;
+    border-radius: 5%;
+    color: #770d60;
+}
+
+.slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.img_anuncio img{
+    width: 500px;
+    height: 500px;
+}
+
+
+#titulo_card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    margin-top: -100px;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+#text_card{
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    margin-bottom: 50px;  
+}
+.card-tam{
+    margin-left: 40px;
+    height: 50px;
+    width: 450px;
+}
+/*buton*/
+.button-servico{
+    margin-top: 75px;
+    margin-bottom: -100px;
+    
+}
+.servico_slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    border: 2px solid #770d60;
+    color: rgb(36, 6, 36);
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.428);
+}
+.servico_slogan:hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    background-color: rgba(252, 220, 255, 0.428);
+    color: rgb(8, 8, 8);
+    height: 70px;
+    width: 200px;
+    border-radius: 20px;
+    margin-top: 10px;
+    
+}
+
+
+
+
+.img_anuncio {
+    width: 100px;
+    height: auto;
+}
+/*Styler_Proposta*/
+.proposta{
+    display: flex;
+}
+#titulo_proposta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    margin-top: 52px;
+    margin-left: 40px;
+}
+.content_criacao{
+    display: flex;
+    background-color: #83339E;
+    width: 250px;
+    height: 300px;
+    border-radius: 35px;
+    margin-left: 20%;
+}
+#titulo_criacao{
+    display: flex;
+    font-size: 25px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: blue;
+    justify-content: center;
+    margin-left: 60px;
+
+}
+#text_criacao{
+    display: flex;
+    font-size: 10px;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: white;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Coloca logo e menu em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Alinha links em coluna */
+        padding: 10px; /* Espaçamento em volta da lista */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Margem vertical */
+    }
+
+    .anuncio {
+        padding: 10px; /* Ajusta padding */
+    }
+
+    .proposta-container {
+        flex-direction: column; /* Empilha caixas em coluna */
+        align-items: center; /* Centraliza caixas */
+    }
+
+    .caixa {
+        width: 90%; /* Largura da caixa em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo_card {
+        font-size: 24px; /* Ajusta tamanho da fonte */
+    }
+
+    #text_card {
+        font-size: 16px; /* Ajusta tamanho da fonte */
+    }
+
+    .servico_slogan {
+        font-size: 14px; /* Ajusta tamanho do botão */
+    }
+
+    footer {
+        padding: 10px; /* Ajusta padding do rodapé */
+    }
+}

@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'MinhaFonte';
+    src: url(../fonte/Libre_Baskerville/LibreBaskerville-Bold.ttf) format('truetype'),
+        url(../fonte/Libre_Baskerville/LibreBaskerville-Italic.ttf) format('truetype'),
+        url(../fonte/Libre_Baskerville/LibreBaskerville-Regular.ttf) format('truetype');
+}
+
+body {
+    background: linear-gradient(125deg, #FEDBFC, #521A6B 89%);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/*Style Header,nav*/
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #755086;
+}
+
+#im_logo {
+    margin-top: -20px;
+    width: 150px;
+}
+
+.nome_site {
+    font-size: 40px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: white;
+}
+
+.naveg {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.menu ul {
+    list-style: none;
+    
+    font-family: 'MinhaFonte';
+    
+}
+
+.menu ul li a {   
+    margin-left: 20px;
+    
+}
+
+.menu ul li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    padding-bottom: 3px;
+}
+
+.logo,
+.naveg {
+    flex-grow: 1;
+    display: flex;
+}
+
+/* Style anuncio*/
+.anuncio{
+    margin: 100px;
+}
+
+.img_anuncio{
+    margin-right: 50px;
+}
+.img_anuncio img {
+    width: 400px;
+    height: 400px;
+}
+video {
+    overflow: hidden;
+    z-index: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: inherit;
+}
+#vi{
+    position: absolute;
+    height: 100%;
+
+}
+.slogan_info{
+    background-clip: url(Desig.mp4);
+    border-radius: 5%;
+    color: #ffffff;
+    margin-left: 55px;
+    position: relative;
+}
+
+.slogan-text{
+    margin: 50px;
+}
+
+.slogan-text h1{
+    font-size: 38px;
+} 
+
+.slogan-text p{
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+.button-servico{
+    margin: 80px;
+}
+.servico_slogan{
+    font-size: 20px;
+    font-style: italic;
+    border: 2px solid #ffffff;
+    color: rgb(194, 150, 194);
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.428);
+    padding: 12px 15px;
+}
+.servico_slogan:hover{
+    background-color: rgba(244, 120, 255, 0.428);
+}
+/*Styler_Proposta*/
+
+
+/*RESPONSIVIDADE*/
+@media (max-width: 768px) {
+    .cabecalho {
+        flex-direction: column; /* Coloca logo e menu em coluna */
+        align-items: flex-start; /* Alinha à esquerda */
+    }
+
+    .menu ul {
+        flex-direction: column; /* Alinha links em coluna */
+        padding: 10px; /* Espaçamento em volta da lista */
+    }
+
+    .menu li {
+        margin: 5px 0; /* Margem vertical */
+    }
+
+    .anuncio {
+        padding: 10px; /* Ajusta padding */
+    }
+
+    .proposta-container {
+        flex-direction: column; /* Empilha caixas em coluna */
+        align-items: center; /* Centraliza caixas */
+    }
+
+    .caixa {
+        width: 90%; /* Largura da caixa em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo_card {
+        font-size: 24px; /* Ajusta tamanho da fonte */
+    }
+
+    #text_card {
+        font-size: 16px; /* Ajusta tamanho da fonte */
+    }
+
+    .servico_slogan {
+        font-size: 14px; /* Ajusta tamanho do botão */
+    }
+
+    footer {
+        padding: 10px; /* Ajusta padding do rodapé */
+    }
+}
