@@ -1,0 +1,30 @@
+.info01-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.info01{
+    width: 1100px;
+    height: 500px;
+    background-color: black;
+    margin-right: 50px;
+}
+
+
+.info01-text{
+    width: 7500px;
+    height: 500px;
+    background-color: brown;
+    margin-right: 50px;
+    border-radius: 50px;
+}
+
+.info01-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
