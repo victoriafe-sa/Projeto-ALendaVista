@@ -38,8 +38,8 @@ CREATE TABLE Funcionarios (
     CPF CHAR(14),
     Email VARCHAR(100),
     Data_Admissao DATE,
-    Funcao VARCHAR(15),
-    Departamento VARCHAR(15),
+    Funcao VARCHAR(50),
+    Departamento VARCHAR(20),
     Status_FUNC VARCHAR(20),
     fk_Administrador_id_Administrador INT,
     fk_Equipe_id_equipe INT
@@ -47,11 +47,12 @@ CREATE TABLE Funcionarios (
 
 CREATE TABLE Equipe (
     id_equipe INT PRIMARY KEY,
-    nome VARCHAR(20),
+    nome VARCHAR(50),
     qnt_func INT(2),
     descricao VARCHAR(100)
 );
-
+SET FOREIGN_KEY_CHECKS = 1;
+drop table Equipe;
 CREATE TABLE Concorre (
     fk_Candidato_id_Candidato INT,
     fk_Processo_id_Processo INT
@@ -62,7 +63,8 @@ CREATE TABLE Gerenciado (
     fk_Equipe_id_equipe INT
 );
 
-ALTER TABLE Funcionarios ADD CONSTRAINT FK_Funcionarios_2
+ALTER TABLE Funcionarios 
+ADD CONSTRAINT FK_Funcionarios_2
     FOREIGN KEY (fk_Administrador_id_Administrador)
     REFERENCES Administrador (id_Administrador)
     ON DELETE RESTRICT;
@@ -81,7 +83,8 @@ ALTER TABLE Concorre ADD CONSTRAINT FK_Concorre_2
     FOREIGN KEY (fk_Processo_id_Processo)
     REFERENCES Processo (id_Processo)
     ON DELETE RESTRICT;
- 
+
+
 ALTER TABLE Gerenciado ADD CONSTRAINT FK_Gerenciado_1
     FOREIGN KEY (fk_Processo_id_Processo)
     REFERENCES Processo (id_Processo)
@@ -129,17 +132,17 @@ INSERT INTO Administrador (id_Administrador, Nome, CPF, Email, Data_Admissao, Ca
   (9, 'Rafael Ferreira', '12345678905', 'rafael@email.com', '2023-03-18', 'Gerente', 'Financeiro', 'Ativo'),
   (10, 'Isabela Silva', '98765432105', 'isabela@email.com', '2022-07-02', 'Analista', 'TI', 'Ativo');
   
-INSERT INTO Funcionarios (id_Funcionarios, Nome, CPF, Email, Data_Admissao, Funcao, Departamento, Status_FUNC, fk_Administrador_id_Administrador, fk_Equipe_id_equipe) VALUES
-  (1, 'João Silva', '12345678901', 'joao@empresa.com', '2023-01-01', 'Desenvolvedor', 'TI', 'Ativo', 1, 1),
-  (2, 'Maria Souza', '98765432109', 'maria@empresa.com', '2023-02-15', 'Analista de Sistemas', 'TI', 'Ativo', 1, 1),
-  (3, 'Pedro Santos', '12345678902', 'pedro@empresa.com', '2023-03-20', 'Gerente de Projetos', 'Gerencial', 'Ativo', 2, 2),
-  (4, 'Ana Oliveira', '98765432108', 'ana@empresa.com', '2023-04-05', 'Designer Gráfico', 'Marketing', 'Ativo', 3, 3),
-  (5, 'Carlos Pereira', '12345678903', 'carlos@empresa.com', '2023-05-28', 'Analista de Marketing', 'Marketing', 'Ativo', 3, 3),
-  (6, 'Beatriz Santos', '98765432107', 'beatriz@empresa.com', '2023-06-12', 'Contador', 'Financeiro', 'Ativo', 4, 4),
-  (7, 'Gustavo Lima', '12345678904', 'gustavo@empresa.com', '2023-07-25', 'Assistente Administrativo', 'Administrativo', 'Ativo', 4, 4),
-  (8, 'Helena Costa', '98765432106', 'helena@empresa.com', '2023-08-10', 'Vendedor', 'Comercial', 'Ativo', 5, 5),
-  (9, 'Rafael Ferreira', '12345678905', 'rafael@empresa.com', '2023-09-18', 'Técnico de Suporte', 'TI', 'Ativo', 1, 1),
-  (10, 'Isabela Silva', '98765432105', 'isabela@empresa.com', '2023-10-02', 'Estagiário de Marketing', 'Marketing', 'Ativo', 3, 3);
+INSERT INTO Funcionarios (id_Funcionarios, Nome, CPF, Email, Data_Admissao, Funcao, Departamento, Status_FUNC) VALUES
+  (1, 'João Silva', '12345678901', 'joao@empresa.com', '2023-01-01', 'Desenvolvedor', 'TI', 'Ativo'),
+  (2, 'Maria Souza', '98765432109', 'maria@empresa.com', '2023-02-15', 'Analista de Sistemas', 'TI', 'Ativo'),
+  (3, 'Pedro Santos', '12345678902', 'pedro@empresa.com', '2023-03-20', 'Gerente de Projetos', 'Gerencial', 'Ativo'),
+  (4, 'Ana Oliveira', '98765432108', 'ana@empresa.com', '2023-04-05', 'Designer Gráfico', 'Marketing', 'Ativo'),
+  (5, 'Carlos Pereira', '12345678903', 'carlos@empresa.com', '2023-05-28', 'Analista de Marketing', 'Marketing', 'Ativo'),
+  (6, 'Beatriz Santos', '98765432107', 'beatriz@empresa.com', '2023-06-12', 'Contador', 'Financeiro', 'Ativo'),
+  (7, 'Gustavo Lima', '12345678904', 'gustavo@empresa.com', '2023-07-25', 'Assistente Administrativo', 'Administrativo', 'Ativo'),
+  (8, 'Helena Costa', '98765432106', 'helena@empresa.com', '2023-08-10', 'Vendedor', 'Comercial', 'Ativo'),
+  (9, 'Rafael Ferreira', '12345678905', 'rafael@empresa.com', '2023-09-18', 'Técnico de Suporte', 'TI', 'Ativo'),
+  (10, 'Isabela Silva', '98765432105', 'isabela@empresa.com', '2023-10-02', 'Estagiário de Marketing', 'Marketing', 'Ativo');
 
 INSERT INTO Equipe (id_equipe, nome, qnt_func, descricao) VALUES
   (1, 'Equipe de Desenvolvimento', 5, 'Responsável pelo desenvolvimento de software'),
