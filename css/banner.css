@@ -13,10 +13,13 @@
     font-size: 70px;
     font-weight: bold;
     margin-top: -90px;
+    text-align: center;
+
 }
 #titulo-banner{
     width: 700px;
     margin-bottom: 30px;
+    
 }
 
 #ancora{
@@ -36,12 +39,11 @@
 
 #banner #paragrafo{
     margin-top: 10px;
-    font-size: 70px;
+    font-size: px;
     color: rgba(255, 255, 255, 0.83);
     font-weight: 300;
     text-align: justify;
     margin-bottom: 20px;
-    font-family: Edwardian Script ITC;
 }
 
 
