@@ -65,20 +65,14 @@ a {
     
 }
 
-.menu:hover{
-    color: black;
-}
-
 .menu ul li a {
     position: relative;
     z-index: 10;
 }
 
-
 .menu ul li a:hover {
     text-decoration: none;
     border-bottom: 3px solid rgb(255, 255, 255);
-    padding-bottom: 3px;
 }
 
 .logo,

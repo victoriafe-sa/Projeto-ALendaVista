@@ -28,7 +28,6 @@ div.item {
     position: absolute;
     width: 800px;
     height: 500px;
-    background-color: coral;
     --r: calc(var(--position) - var(--offset));
     --abs: max(calc(var(--r) * -1), var(--r));
     transition: all 0.25s linear;
@@ -41,19 +40,19 @@ div.item {
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-color: #9343a8;
+    background-color: #521A6B;
     text-align: center;
 }
 
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-color: #9343a8;
+    background-color: #521A6B;
     text-align: center;
 }
 
 div.item:nth-of-type(3) {
     --offset: 3;
-    background-color: #9343a8;
+    background-color: #521A6B;
     text-align: center;
 }
 
@@ -102,4 +101,3 @@ input:nth-of-type(3):checked~div#carousel {
     padding-top: 20px;
     font-size: 36px;
 }
-
