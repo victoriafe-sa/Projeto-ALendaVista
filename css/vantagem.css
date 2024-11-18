@@ -1,9 +1,8 @@
 .vantagem_sec{
     margin-top: 30px;
 }
-/* Mantendo os estilos gerais */
+
 #vantagens {
-    color: #000000;
     margin: auto;
     width: 1200px;
     padding: 40px;
@@ -15,7 +14,6 @@
     width: 24px;
     height: 24px;
     margin-right: 5px;
-    margin-top: 41px;
 }
 
 .vantagem h3 {
@@ -30,20 +28,13 @@
     flex-wrap: wrap;
     margin-bottom: 15px;
     font-size: 28px;
-    /* Cor do texto */
-}
-#ultimo{
-    margin-bottom: 0;
 }
 
 .vantagem {
     display: flex;
     align-items: flex-start;
-    /* Alinha os itens verticalmente no centro */
     justify-content: flex-end;
-    /* Alinha os itens horizontalmente à direita */
     gap: 10px;
-    /* Espaçamento entre os elementos */
 }
 
 .vantag_nome {
@@ -58,5 +49,5 @@
 }
 
 #vant {
-    flex: 2; /* Faz com que essa div ocupe mais espaço em relação à div do título */
+    flex: 2;
 }

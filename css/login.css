@@ -1,0 +1,285 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(125deg, #FEDBFC, #521A6B 89%);
+}
+
+.wrapper {
+  position: relative;
+  width: 750px;
+  height: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 25px #000;
+  overflow: hidden;
+}
+
+.wrapper .bg1 {
+  position: absolute;
+  width: 850px;
+  height: 600px;
+  background: linear-gradient(125deg, #FEDBFC, #521A6B 89%);
+  top: -4px;
+  right: 0;
+  transform: rotate(10deg) skewY(40deg);
+  transform-origin: bottom right;
+  transition: 1.5s ease;
+  transition-delay: 1.6s;
+  
+}
+
+.wrapper .form-wrapper {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper .form-wrapper.login {
+  left: 0;
+  padding: 0 60px 0 40px;
+}
+
+.title {
+  position: relative;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #000;
+  text-align: center;
+}
+
+.title::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 4px;
+  background: #000;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  padding-right: 23px;
+  transition: 0.5s;
+}
+
+.input-box input:focus,
+.input-box input:valid {
+  border-color: #521A6B;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #000;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+  color: #521A6B;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  font-size: 18px;
+  transition: 0.5s;
+}
+
+.input-box input:focus ~ i,
+.input-box input:valid ~ i {
+  color: #521A6B;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #000;
+  border-radius: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.74);
+}
+
+.link {
+  font-size: 14px;
+  text-align: center;
+  color: #000;
+  margin: 20px 0 10px;
+}
+
+.link a {
+  color: #521A6B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.wrapper .info-wrapper {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.wrapper .info-wrapper.login {
+  right: 0;
+  text-align: right;
+  padding: 0 40px 60px 100px;
+}
+
+.info-wrapper h2 {
+  font-size: 36px;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.info-wrapper p {
+  font-size: 16px;
+}
+
+.wrapper .form-wrapper.register {
+  padding: 0 40px 0 60px;
+  right: 0;
+  pointer-events: none;
+  transform: translateX(120%);
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.7s ease;
+  transition-delay: 0s;
+}
+
+.wrapper .info-wrapper.register {
+  left: 0;
+  text-align: left;
+  padding: 0 150px 60px 40px;
+  pointer-events: none;
+  transform: translateX(-120%);
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.7s ease;
+  transition-delay: 0s;
+}
+
+.wrapper .form-wrapper.login {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transition: 0.7s ease;
+  transition-delay: 2.5s;
+}
+
+.wrapper .info-wrapper.login {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transition: 0.7s ease;
+  transition-delay: 2.5s;
+}
+
+.wrapper.active .bg1 {
+  transform: rotate(0) skewY(0);
+  transition-delay: 0.5s;
+}
+
+.wrapper .bg2 {
+  position: absolute;
+  top: 100%;
+  left: 250px;
+  width: 850px;
+  height: 700px;
+  background: #fff;
+  transform: rotate(0) skewY(0);
+  transform-origin: bottom left;
+  transition: 1.5s ease;
+  transition-delay: 0.5s;
+}
+
+.wrapper.active .bg2 {
+  transform: rotate(-11deg) skewY(-40deg);
+  transition-delay: 1.2s;
+}
+
+.wrapper.active .form-wrapper.login {
+  transform: translateX(-120%);
+  opacity: 0;
+  filter: blur(10px);
+  transition-delay: 0s;
+}
+
+.wrapper.active .info-wrapper.login {
+  transform: translateX(120px);
+  opacity: 0;
+  filter: blur(10px);
+  transition: 0.7s ease;
+  transition-delay: 0s;
+}
+
+.wrapper.active .form-wrapper.register {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  pointer-events: auto;
+  transition-delay: 2s;
+}
+
+.wrapper.active .info-wrapper.register {
+  transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  pointer-events: auto;
+  transition-delay: 2s;
+}
