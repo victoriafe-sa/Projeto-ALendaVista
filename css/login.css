@@ -3,22 +3,11 @@
 /* Google Fonts(Poppins) */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-* {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(125deg, #FEDBFC, #521A6B 89%);
-}
 
 .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: relative;
   width: 750px;
   height: 450px;
@@ -283,3 +272,59 @@ body {
   pointer-events: auto;
   transition-delay: 2s;
 }
+
+
+.modal {
+  display: none; /* Escondido por padrão */
+  position: fixed; /* Fica fixo na tela */
+  z-index: 1; /* Fica acima de outros elementos */
+  left: 0;
+  top: 0;
+  overflow: auto; /* Habilita rolagem se necessário */
+  background-color: rgb(0,0,0); /* Cor de fundo */
+  background-color: rgba(0,0,0,0.4); /* Fundo com opacidade */
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.modal-content{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* Botão de Fechar */
+.close-btn {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 250px;
+  right: 650px;
+  background: linear-gradient(125deg, #FEDBFC, #521A6B 89%);
+  color: #ffffff;
+  font-size: 30px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.close-btn:hover {
+  color: #FF4C4C;
+}
+

@@ -1,8 +1,8 @@
-.vantagem_sec{
+.vantagem_mpR_sec_mpR{
     margin-top: 30px;
 }
 
-#vantagens {
+#vantagens_mpR {
     margin: auto;
     width: 1200px;
     padding: 40px;
@@ -10,19 +10,19 @@
     display: flex;
 }
 
-.vantagem img {
+.vantagem_mpR img {
     width: 24px;
     height: 24px;
     margin-right: 5px;
 }
 
-.vantagem h3 {
+.vantagem_mpR h3 {
     font-size: 34px;
     margin-bottom: 18px;
     color: #FFFFFF;
 }
 
-.vantagem p {
+.vantagem_mpR p {
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
     flex-wrap: wrap;
@@ -30,14 +30,14 @@
     font-size: 28px;
 }
 
-.vantagem {
+.vantagem_mpR {
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     gap: 10px;
 }
 
-.vantag_nome {
+.vantag_nome_mpR {
     width: 458px;
     height: 239px;
     color: #FFF;
@@ -48,6 +48,6 @@
     margin-top: 80px;
 }
 
-#vant {
+#vant_mpR {
     flex: 2;
 }
