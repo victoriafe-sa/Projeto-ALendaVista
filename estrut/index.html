@@ -5,9 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A LendaVista | Sua empresa favorita</title>
-    <link href="../fonte/Libre_Baskerville/LibreBaskerville-Bold.ttf" rel="stylesheet">
-    <link rel="stylesheet" href="../fonte/Libre_Baskerville/LibreBaskerville-Italic.ttf">
-    <link rel="stylesheet" href="../fonte/Libre_Baskerville/LibreBaskerville-Regular.ttf">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/carousel.css">
     <link rel="stylesheet" href="../css/vantagem.css">
@@ -30,9 +27,9 @@
             <div class="naveg_mpR">
                 <nav class="menu_mpR">
                     <ul>
-                        <li class="btn"><a href="../estrut/index.html">Início</a></li>
-                        <li class="btn"><a href="#" id="loginBtn">Login</a></li>
-                        <li class="btn"><a href="#trabalhe">Trabalhe Conosco</a></li>
+                        <li class="btn_mpR1"><a href="../estrut/index.html">Início</a></li>
+                        <li class="btn_mpR2"><a href="#" id="loginBtn">Login</a></li>
+                        <li class="btn_mpR3"><a href="#trabalhe">Trabalhe Conosco</a></li>
                     </ul>
                 </nav>
             </div>
@@ -41,10 +38,12 @@
 
     <main>
         <section class="anuncio_mpR">
-            <video id="vi_mpR" autoplay loop muted poster="poster.jpg">
-                <source src="../img/desig.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
+            <div id="vi_mpR_cont">
+                <video id="vi_mpR" autoplay loop muted poster="poster.jpg">
+                    <source src="../img/desig.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+            </div>
             <div class="slogan_info_mpR">
                 <div class="slogan-text_mpR">
                     <h1 id="titulo_slogan_mpR">Nosso sucesso é <br> o seu sucesso</h1>
@@ -84,7 +83,7 @@
                 </div>
         </section>
         <div class="divisao">
-            <img  src="../img/linha.png" alt="">
+            <img src="../img/linha.png" alt="">
         </div>
         <section class="vantagem_sec_mpR">
             <div id="vantagens_mpR">
@@ -223,77 +222,76 @@
                 </div>
             </div>
         </section>
+
         <div id="loginModal" class="modal">
             <div class="modal-content">
-                <!-- Botão de Fechar -->
-                <button class="close-btn" id="closeBtn">X</button>
-        
                 <div class="wrapper">
-                    <span class="bg1"></span>
-                    <div class="form-wrapper login">
-                        <h2 class="title">Login</h2>
-                        <form action="#">
-                            <div class="input-box">
-                                <input type="text" required />
-                                <label for="">Email</label>
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="password" required />
-                                <label for="">Senha</label>
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <button class="btn" type="submit">Login</button>
-                            <div class="link">
-                                <p>
-                                    Você não tem conta? <a href="#" class="signup-link">Criar conta</a>
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-        
-                    <div class="info-wrapper login">
-                        <h2>Bem-vindo de Volta!</h2>
-                        <p>Faça login na sua conta e veja seus processos</p>
-                    </div>
-        
-                    <span class="bg2"></span>
-        
-                    <div class="form-wrapper register">
-                        <h2 class="title">Criar Conta</h2>
-                        <form action="#">
-                            <div class="input-box">
-                                <input type="email" required />
-                                <label for="">Seu Email</label>
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="text" required />
-                                <label for="">Nome Completo</label>
-                                <i class="fas fa-user"></i>
-                            </div>
-                            <div class="input-box">
-                                <input type="password" required />
-                                <label for="">Senha</label>
-                                <i class="fas fa-lock"></i>
-                            </div>
-                            <button class="btn" type="submit">Criar Conta</button>
-                            <div class="link">
-                                <p>
-                                    Já possui uma conta? <a href="#" class="login-link">Login</a>
-                                </p>
-                            </div>
-                        </form>
-                    </div>
-        
-                    <div class="info-wrapper register">
-                        <h2>Seja Bem-Vindo(a)!</h2>
-                        <p>Crie uma conta para se inscrever em nossos processos seletivos</p>
+                <button class="close-btn" id="closeBtn">x</button>
+                        <span class="bg1"></span>
+                        <div class="form-wrapper login">
+                            <h2 class="title">Login</h2>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="text" required />
+                                    <label for="">Email</label>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" required />
+                                    <label for="">Senha</label>
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <button class="btn" type="submit">Login</button>
+                                <div class="link">
+                                    <p>
+                                        Você não tem conta? <a href="#" class="signup-link">Criar conta</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="info-wrapper login">
+                            <h2>Bem-vindo de Volta!</h2>
+                            <p>Faça login na sua conta e veja seus processos</p>
+                        </div>
+
+                        <span class="bg2"></span>
+
+                        <div class="form-wrapper register">
+                            <h2 class="title">Criar Conta</h2>
+                            <form action="#">
+                                <div class="input-box">
+                                    <input type="email" required />
+                                    <label for="">Seu Email</label>
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="text" required />
+                                    <label for="">Nome Completo</label>
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <div class="input-box">
+                                    <input type="password" required />
+                                    <label for="">Senha</label>
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <button class="btn" type="submit">Criar Conta</button>
+                                <div class="link">
+                                    <p>
+                                        Já possui uma conta? <a href="#" class="login-link">Login</a>
+                                    </p>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="info-wrapper register">
+                            <h2>Seja Bem-Vindo(a)!</h2>
+                            <p>Crie uma conta para se inscrever em nossos processos seletivos</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        
+
     </main>
 
     <footer>

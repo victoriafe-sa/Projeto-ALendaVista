@@ -1,9 +1,4 @@
-@font-face {
-    font-family: 'MinhaFonte';
-    src: url(../fonte/Libre_Baskerville/LibreBaskerville-Bold.ttf) format('truetype'),
-        url(../fonte/Libre_Baskerville/LibreBaskerville-Italic.ttf) format('truetype'),
-        url(../fonte/Libre_Baskerville/LibreBaskerville-Regular.ttf) format('truetype');
-}
+
 * {
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -17,7 +12,6 @@ body{
     padding: 0;
 }
 
-/*Style Header,nav*/
 ul {
     display: flex;
     justify-content: center;
@@ -94,7 +88,7 @@ a {
     max-width: 400px;
     height: 200px;
 }
-/* Style anuncio*/
+
 .anuncio_mpR{
     margin: 100px;
 }
@@ -154,7 +148,7 @@ a {
 .servico_slogan_mpR:hover{
     background-color: rgba(46, 5, 50);
 }
-/*CSS do Trabalhe Conosco*/
+
 #titulo-trabalhe_mpR{
     margin-bottom: 30px;
     font-size: 55px;
@@ -168,53 +162,53 @@ a {
     color: rgba(255, 255, 255, 0.83);
     font-weight: 300;
     text-align: justify;
-    font-family: Edwardian Script ITC;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-/*RESPONSIVIDADE*/
+
 @media (max-width: 768px) {
     .cabecalho_mpR {
-        flex-direction: column; /* Coloca logo e menu em coluna */
-        align-items: flex-start; /* Alinha à esquerda */
+        flex-direction: column;
+        align-items: flex-start;
     }
 
     .menu_mpR ul {
-        flex-direction: column; /* Alinha links em coluna */
-        padding: 10px; /* Espaçamento em volta da lista */
+        flex-direction: column;
+        padding: 10px;
     }
 
     .menu_mpR li {
-        margin: 5px 0; /* Margem vertical */
+        margin: 5px 0;
     }
 
     .anuncio_mpR {
-        padding: 10px; /* Ajusta padding */
+        padding: 10px;
     }
 
     .proposta-container_mpR {
-        flex-direction: column; /* Empilha caixas em coluna */
-        align-items: center; /* Centraliza caixas */
+        flex-direction: column;
+        align-items: center; 
     }
 
     .caixa_mpR {
-        width: 90%; /* Largura da caixa em telas menores */
+        width: 90%;
     }
 }
 
 @media (max-width: 480px) {
     #titulo_card_mpR {
-        font-size: 24px; /* Ajusta tamanho da fonte */
+        font-size: 24px;
     }
 
     #text_card_mpR {
-        font-size: 16px; /* Ajusta tamanho da fonte */
+        font-size: 16px; 
     }
 
     .servico_slogan_mpR {
-        font-size: 14px; /* Ajusta tamanho do botão */
+        font-size: 14px;
     }
 
     footer_mpR {
-        padding: 10px; /* Ajusta padding do rodapé */
+        padding: 10px;
     }
 }
