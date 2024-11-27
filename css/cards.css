@@ -2,6 +2,7 @@
 	display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
 .card_mpR {
     width: 300px;
@@ -9,7 +10,6 @@
     position: relative;
     color: white;
 	border-radius: 30px;
-
 }
 .card_mpR .image_mpR {
     width: 100%;

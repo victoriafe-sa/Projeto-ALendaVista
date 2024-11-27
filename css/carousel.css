@@ -93,8 +93,10 @@ input:nth-of-type(3):checked~div#carousel {
 
 #item-text {
     font-size: 22px;
-    padding-top: 15px;
-    margin: 15px;
+    padding-top: 10px;
+    margin: 55px;
+    text-align: center;
+    align-items: center;
 }
 
 #item-titulo {

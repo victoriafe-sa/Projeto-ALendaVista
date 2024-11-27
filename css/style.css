@@ -1,11 +1,11 @@
-
 * {
-    
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-body{
+}
+
+body {
     background: linear-gradient(125deg, #FEDBFC, #521A6B 89%);
     color: white;
     margin: 0;
@@ -62,12 +62,13 @@ a {
 .menu_mpR ul {
     list-style: none;
     font-family: 'MinhaFonte';
-    
+
 }
 
 .menu_mpR ul li a {
     position: relative;
     z-index: 10;
+    font-size: 22px;
 }
 
 .menu_mpR ul li a:hover {
@@ -80,68 +81,68 @@ a {
     flex-grow: 1;
     display: flex;
 }
-.divisao{
+
+.divisao {
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.divisao img{
+
+.divisao img {
     max-width: 400px;
     height: 200px;
 }
 
-.anuncio_mpR{
+.anuncio_mpR {
     margin: 100px;
 }
 
-.img_anuncio_mpR{
+.img_anuncio_mpR {
     margin-right: 50px;
 }
+
 .img_anuncio_mpR img {
     width: 400px;
     height: 400px;
 }
+
 #vi_mpR {
     overflow: hidden;
-    z-index: 0;
+    z-index: 1;
     width: 100%;
     top: 0;
     left: 0;
     border-radius: inherit;
-    opacity: 75%;
     position: absolute;
     height: 100%;
     margin-top: -59px;
 }
 
-#vi_mpR source{
-    background-color: black;
-}
-
-.slogan_info_mpR{
+.slogan_info_mpR {
     color: #ffffff;
     margin-left: 45px;
     position: relative;
+    z-index: 1;
 }
 
-.slogan-text_mpR{
+.slogan-text_mpR {
     margin: 50px;
 }
 
-.slogan-text_mpR h1{
+.slogan-text_mpR h1 {
     font-size: 38px;
-} 
+}
 
-.slogan-text_mpR p{
+.slogan-text_mpR p {
     font-size: 22px;
     margin-top: 50px;
 }
 
-.button-servico_mpR{
+.button-servico_mpR {
     margin: 80px;
 }
 
-.servico_slogan_mpR{
+.servico_slogan_mpR {
     font-size: 20px;
     font-style: italic;
     color: rgb(194, 150, 194);
@@ -150,18 +151,19 @@ a {
     padding: 12px 15px;
     background-color: #755086;
 }
-.servico_slogan_mpR:hover{
+
+.servico_slogan_mpR:hover {
     background-color: rgba(46, 5, 50);
 }
 
-#titulo-trabalhe_mpR{
+#titulo-trabalhe_mpR {
     margin-bottom: 60px;
     font-size: 55px;
     font-weight: bold;
     text-align: center;
 }
 
-.paragrafo_mpR{
+.paragrafo_mpR {
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 100px;
@@ -193,7 +195,7 @@ a {
 
     .proposta-container_mpR {
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
     }
 
     .caixa_mpR {
@@ -207,7 +209,7 @@ a {
     }
 
     #text_card_mpR {
-        font-size: 16px; 
+        font-size: 16px;
     }
 
     .servico_slogan_mpR {
