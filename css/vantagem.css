@@ -14,20 +14,21 @@
     width: 24px;
     height: 24px;
     margin-right: 5px;
+    margin-top: 13px;
 }
 
-.vantagem_mpR h3 {
-    font-size: 34px;
+.vantagens_container_mpR h3 {
+    font-size: 30px;
     margin-bottom: 18px;
     color: #FFFFFF;
 }
 
-.vantagem_mpR p {
+.vantagens_container_mpR p {
     color: rgba(255, 255, 255, 0.8);
     margin: 0;
     flex-wrap: wrap;
     margin-bottom: 15px;
-    font-size: 28px;
+    font-size: 22px;
 }
 
 .vantagem_mpR {
@@ -38,14 +39,15 @@
 }
 
 .vantag_nome_mpR {
-    width: 458px;
-    height: 239px;
     color: #FFF;
     font-family: 'Limelight', serif;
-    font-size: 60px;
     font-weight: bolder;
     margin-right: 90px;
-    margin-top: 80px;
+    margin-top: 190px;
+}
+
+.vantag_nome_mpR h1{
+    font-size: 90px;
 }
 
 #vant_mpR {

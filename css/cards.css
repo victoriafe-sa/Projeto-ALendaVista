@@ -1,23 +1,15 @@
-
 .tudo_mpR{
 	display: flex;
     justify-content: space-around;
     align-items: center;
-
-}
-
-.tudo-2_mpR{
-	display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 50px;
 }
 .card_mpR {
-    width: 460px;
-    height:460px;
+    width: 300px;
+    height:auto;
     position: relative;
     color: white;
 	border-radius: 30px;
+
 }
 .card_mpR .image_mpR {
     width: 100%;
@@ -54,19 +46,18 @@
 .card_mpR:hover .details_mpR {
     transform: perspective(2000px) rotateY(0deg);
 }
-.center_mpR {
+
+.center_mpR h1 { 
     padding: 20px;
     top: 50%;
-}
-.center_mpR h1 {
     color: #ffffff;
     font-size: 25px;
     text-align: center;
 
 }
 .center_mpR ul{
-    text-decoration: none;
-    
+    display: block;
+    margin-left: 30px;
 }
 .center_mpR ul li{
     margin: 10px 0;

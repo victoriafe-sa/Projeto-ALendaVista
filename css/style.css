@@ -1,6 +1,6 @@
 
 * {
-    font-family: "Poppins", sans-serif;
+    
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,6 +10,7 @@ body{
     color: white;
     margin: 0;
     padding: 0;
+    font-family: "Poppins", sans-serif;
 }
 
 ul {
@@ -107,17 +108,19 @@ a {
     top: 0;
     left: 0;
     border-radius: inherit;
-}
-#vi_mpR{
+    opacity: 75%;
     position: absolute;
     height: 100%;
+    margin-top: -59px;
+}
+
+#vi_mpR source{
+    background-color: black;
 }
 
 .slogan_info_mpR{
-    background-clip: url(Desig.mp4);
-    border-radius: 5%;
     color: #ffffff;
-    margin-left: 55px;
+    margin-left: 45px;
     position: relative;
 }
 
@@ -137,6 +140,7 @@ a {
 .button-servico_mpR{
     margin: 80px;
 }
+
 .servico_slogan_mpR{
     font-size: 20px;
     font-style: italic;
@@ -151,19 +155,20 @@ a {
 }
 
 #titulo-trabalhe_mpR{
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     font-size: 55px;
     font-weight: bold;
     text-align: center;
 }
 
-#paragrafo_mpR{
-    margin: 100px;
-    font-size: 100px;
-    color: rgba(255, 255, 255, 0.83);
-    font-weight: 300;
+.paragrafo_mpR{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+    font-size: 40px;
     text-align: justify;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Lucida Handwriting', 'Brush Script Std', cursive;
+
 }
 
 
