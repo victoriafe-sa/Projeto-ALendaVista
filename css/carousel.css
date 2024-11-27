@@ -36,23 +36,25 @@ div.item {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
     /* Default shadow for all items */
     border-radius: 25px;
+   
 }
 
 div.item:nth-of-type(1) {
     --offset: 1;
-    background-color: #521A6B;
+    background-image: url('../img/carousel.jpg');
     text-align: center;
+    
 }
 
 div.item:nth-of-type(2) {
     --offset: 2;
-    background-color: #521A6B;
+    background-image: url('../img/social.jpg');
     text-align: center;
 }
 
 div.item:nth-of-type(3) {
     --offset: 3;
-    background-color: #521A6B;
+    background-image: url('../img/social.jpg');
     text-align: center;
 }
 
@@ -92,14 +94,30 @@ input:nth-of-type(3):checked~div#carousel {
 }
 
 #item-text {
-    font-size: 22px;
+    font-size: 20px;
     padding-top: 10px;
     margin: 55px;
-    text-align: center;
-    align-items: center;
+    width: 350px;
 }
 
 #item-titulo {
     padding-top: 20px;
     font-size: 36px;
+    width: 500px;
+}
+
+#item-text:nth-of-type(2) {
+    font-size: 20px;
+    padding-top: 10px;
+    margin: 55px;
+    width: -350px;
+}
+
+div.item:nth-of-type(2)#item-titulo{
+    right: 50px;
+}
+
+.carousel-content{
+    display: flex;
+    justify-content: space-between;
 }
