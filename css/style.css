@@ -172,7 +172,17 @@ a {
     font-family: 'Lucida Handwriting', 'Brush Script Std', cursive;
 
 }
-
+.text-container{
+    padding-left: 50px;
+    margin-right: -50px;
+}
+.form-container{
+    padding-left: -50px;
+    margin-right: 50px;
+}
+#assunto:nth-of-type(1){
+   width: 100%;
+}
 
 @media (max-width: 768px) {
     .cabecalho_mpR {
@@ -216,7 +226,7 @@ a {
         font-size: 14px;
     }
 
-    footer_mpR {
+    .footer_mpR {
         padding: 10px;
     }
 }
