@@ -55,13 +55,13 @@
     text-align: center;
 
 }
+
 .center_mpR ul{
     display: block;
     margin-left: 30px;
 }
 .center_mpR ul li{
-    margin: 10px 0;
+    margin: 8px 0;
     padding: 0;
     color: #ffffff;
 }
-
