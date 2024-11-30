@@ -128,7 +128,6 @@ a {
 .slogan-text_mpR {
     margin: 50px;
 }
-
 .slogan-text_mpR h1 {
     font-size: 38px;
 }
@@ -158,7 +157,7 @@ a {
 
 #titulo-trabalhe_mpR {
     margin-bottom: 60px;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: bold;
     text-align: center;
 }
@@ -172,6 +171,7 @@ a {
     font-family: 'Lucida Handwriting', 'Brush Script Std', cursive;
 
 }
+
 .text-container{
     padding-left: 50px;
     margin-right: -50px;

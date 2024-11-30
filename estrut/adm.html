@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtro Dinâmico</title>
+  <style>
+    img {
+      width: 300px;
+      transition: filter 0.3s ease;
+    }
+  </style>
+</head>
+<body>
+  <h1>Selecione um filtro</h1>
+  <select id="filtroSelect">
+    <option value="">Escolha um filtro</option>
+    <option value="1">Escala de Cinza</option>
+    <option value="2">Desfoque</option>
+    <option value="3">Brilho</option>
+    <option value="4">Contraste</option>
+  </select>
+  <br><br>
+  <img id="imagem" src="https://via.placeholder.com/300" alt="Imagem exemplo">
+
+  <script>
+    document.getElementById('filtroSelect').addEventListener('change', async function() {
+      const filtroId = this.value;
+      const imagem = document.getElementById('imagem');
+
+      if (filtroId) {
+        try {
+          // Requisição para o servidor
+          const response = await fetch(`http://localhost/api/getFilter.php?id=${filtroId}`);
+          const data = await response.json();
+
+          if (data.success) {
+            imagem.style.filter = data.filter; // Aplica o filtro recebido
+          } else {
+            alert('Filtro não encontrado!');
+          }
+        } catch (error) {
+          console.error('Erro ao buscar o filtro:', error);
+          alert('Erro ao aplicar o filtro.');
+        }
+      } else {
+        imagem.style.filter = 'none'; // Remove o filtro se nenhuma opção for escolhida
+      }
+    });
+  </script>
+</body>
+</html>
