@@ -90,3 +90,42 @@
     justify-content: center;
     align-items: center;
 }
+.boton{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: -50px;
+}
+#loginBut2, #loginBut1,#loginBut3,#loginBut4{
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    background-color:#ffffffbd;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 1.2s;
+    height: 30px;
+    width: 90px;
+    border: none;
+
+
+
+}
+#loginBut2:hover, #loginBut1:hover,#loginBut3:hover,#loginBut4:hover{
+    justify-content: center;
+    align-items: center;
+    background-color:#9c67d1bd;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    border-radius: 15px 2px ;
+    transition: 1.2s;
+    height: 34px;
+    width: 93px;
+
+}
