@@ -1,13 +1,22 @@
-// Verifica se o usuário já existe no localStorage
-function checkAdminUser() {
+// Função para verificar e armazenar os usuários no localStorage
+function checkUsers() {
     const adminUser = {
         email: 'admin@example.com',
         password: 'admin123'
     };
 
-    // Armazenando o usuário admin no localStorage, caso ainda não tenha sido armazenado
+    const regularUser = {
+        email: 'user@example.com',
+        password: 'user123'
+    };
+
+    // Armazenando os usuários no localStorage, caso ainda não tenham sido armazenados
     if (!localStorage.getItem('adminUser')) {
         localStorage.setItem('adminUser', JSON.stringify(adminUser));
+    }
+    
+    if (!localStorage.getItem('regularUser')) {
+        localStorage.setItem('regularUser', JSON.stringify(regularUser));
     }
 }
 
@@ -19,12 +28,15 @@ function handleLogin(event) {
     const email = document.querySelector('.login input[type="text"]').value;
     const password = document.querySelector('.login input[type="password"]').value;
 
-    // Recupera o usuário admin do localStorage
+    // Recupera os usuários do localStorage
     const storedAdminUser = JSON.parse(localStorage.getItem('adminUser'));
+    const storedRegularUser = JSON.parse(localStorage.getItem('regularUser'));
 
-    // Verifica se as credenciais estão corretas
+    // Verifica se as credenciais estão corretas para o admin ou o user
     if (email === storedAdminUser.email && password === storedAdminUser.password) {
-        window.location.href = 'adm.html';  // Redireciona para o form.html
+        window.location.href = 'adm.html';  // Redireciona para o adm.html para admin
+    } else if (email === storedRegularUser.email && password === storedRegularUser.password) {
+        window.location.href = 'form.html';  // Redireciona para o form.html para user
     } else {
         alert('Email ou senha inválidos');
     }
@@ -43,8 +55,8 @@ function handleRegister(event) {
     alert('Conta criada com sucesso! Faça login para acessar.');
 }
 
-// Inicializa a criação do usuário admin no localStorage
-checkAdminUser();
+// Inicializa a criação dos usuários no localStorage
+checkUsers();
 
 // Certifica-se de que o DOM está totalmente carregado antes de adicionar os listeners
 document.addEventListener('DOMContentLoaded', () => {

@@ -93,3 +93,121 @@ fieldset {
         max-width: 100%;
     }
 }
+ /* TEXT*/
+ ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+li {
+    margin: 10px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.cabecalho_mpR {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: linear-gradient(125deg, #511a6b9f,#fabaf7af 89%);
+    width: 100%;
+}
+
+#im_logo_mpR {
+    margin-top: -20px;
+    width: 150px;
+}
+
+.nome_site_mpR {
+    font-size: 40px;
+    margin-left: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MinhaFonte';
+    font-style: italic;
+    color: white;
+}
+
+.naveg_mpR {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 50%;
+}
+
+.menu_mpR ul {
+    list-style: none;
+    font-family: 'MinhaFonte';
+
+}
+
+.menu_mpR ul li a {
+  top: 5px;
+  right: 150px;
+    position: relative;
+    z-index: 10;
+    font-size: 22px;
+}
+
+.menu_mpR ul li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.logo_mpR,
+.naveg_mpR {
+    flex-grow: 1;
+    display: flex;
+}
+@media (max-width: 768px) {
+    .cabecalho_mpR {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .menu_mpR ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .menu_mpR li {
+        margin: 5px 0;
+    }
+
+    .anuncio_mpR {
+        padding: 10px;
+    }
+
+    .proposta-container_mpR {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa_mpR {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    #titulo_card_mpR {
+        font-size: 24px;
+    }
+
+    #text_card_mpR {
+        font-size: 16px;
+    }
+
+    .servico_slogan_mpR {
+        font-size: 14px;
+    }
+
+    .footer_mpR {
+        padding: 10px;
+    }
+}
