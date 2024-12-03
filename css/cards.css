@@ -32,7 +32,7 @@
     top: 0;
     left: 0;
     width: 70%;
-    height: 98%;
+    height: 100%;
     background-color: #3a0368;
     backdrop-filter: blur(5px);
     transition: .5s;
@@ -55,38 +55,13 @@
     text-align: center;
 
 }
-
 .center_mpR ul{
     display: block;
     margin-left: 30px;
 }
 .center_mpR ul li{
-    margin: 8px 0;
+    margin: 10px 0;
     padding: 0;
     color: #ffffff;
 }
 
-.center_mpR  #first-child{
-    margin-top: 20px;
-}
-
-.center_mpR #ul-req li{
-    font-size: 15px;
-    margin-right: 8px;
-}
-
-.center_mpR a{
-    background-color: #e4dbfe;
-    color: black;
-    padding: 8px;
-    border-radius: 50px;
-    font-size: 12px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.link-cadastro{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}

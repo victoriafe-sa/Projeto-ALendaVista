@@ -13,9 +13,11 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/info.css">
     <link rel="stylesheet" href="../css/login.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 
 </head>
+
 <body>
     <header>
         <div class="cabecalho_mpR">
@@ -146,21 +148,13 @@
                     </div>
                     <div class="details_mpR">
                         <div class="center_mpR">
-                            <ul id="ul-desc">
-                                <li id="first-child"><strong>Fechamento: </strong>13/01/2025</li>
-                                <li><strong>Quantidade de Vagas: </strong>15</li>
-                                <li><strong>Descrição: </strong>Auxiliar de TI</li>
-                                <li><strong>Requisitos:</strong></li>
-                                <ul id="ul-req" style="list-style-type: circle;">
-                                    <li>Ensino Médio Completo ou Cursando</li>
-                                    <li>Mais de 16 anos</li>
-                                    <li>Morar no Distrito Federal </li>
-                                </ul>
-                            </ul> 
-                            <!--o botão para login devera ficar aqui-->
-                            <div class="boton">
-                                <button id="loginBut1" href="#">aaa</button>
-                            </div>    
+                            <h1>Processo para pessoas PPI</h1>
+                            <ul>
+                                <li>Data de Fechamento:</li>
+                                <li>Quantidade de Vagas</li>
+                                <li>Descrição:</li>
+                                <li>Requisitos:</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -171,21 +165,13 @@
                     </div>
                     <div class="details_mpR">
                         <div class="center_mpR">
-                            <ul id="ul-desc">
-                                <li id="first-child"><strong>Fechamento: </strong>13/01/2025</li>
-                                <li><strong>Quantidade de Vagas: </strong>15</li>
-                                <li><strong>Descrição: </strong>Auxiliar de TI</li>
-                                <li><strong>Requisitos:</strong></li>
-                                <ul id="ul-req" style="list-style-type: circle;">
-                                    <li>Ensino Médio Completo ou Cursando</li>
-                                    <li>Mais de 16 anos</li>
-                                    <li>Morar no Distrito Federal </li>
-                                </ul>
-                            </ul> 
-                            <!--o botão para login devera ficar aqui-->
-                            <div class="boton">
-                                <button id="loginBut2" href="#">aaa</button>
-                            </div>
+                            <h1>Processo 1º/2025</h1>
+                            <ul>
+                                <li>Data de Fechamento:</li>
+                                <li>Quantidade de Vagas</li>
+                                <li>Descrição:</li>
+                                <li>Requisitos:</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -196,21 +182,13 @@
                     </div>
                     <div class="details_mpR">
                         <div class="center_mpR">
-                            <ul id="ul-desc">
-                                <li id="first-child"><strong>Fechamento: </strong>13/01/2025</li>
-                                <li><strong>Quantidade de Vagas: </strong>15</li>
-                                <li><strong>Descrição: </strong>Auxiliar de TI</li>
-                                <li><strong>Requisitos:</strong></li>
-                                <ul id="ul-req" style="list-style-type: circle;">
-                                    <li>Ensino Médio Completo ou Cursando</li>
-                                    <li>Mais de 16 anos</li>
-                                    <li>Morar no Distrito Federal </li>
-                                </ul>
-                            </ul> 
-                            <!--o botão para login devera ficar aqui-->
-                            <div class="boton">
-                                <button id="loginBut3" href="#">aaa</button>
-                            </div>
+                            <h1>Processo para PCDs</h1>
+                            <ul>
+                                <li>Data de Fechamento:</li>
+                                <li>Quantidade de Vagas</li>
+                                <li>Descrição:</li>
+                                <li>Requisitos:</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -221,21 +199,13 @@
                     </div>
                     <div class="details_mpR">
                         <div class="center_mpR">
-                            <ul id="ul-desc">
-                                <li id="first-child"><strong>Fechamento: </strong>13/01/2025</li>
-                                <li><strong>Quantidade de Vagas: </strong>15</li>
-                                <li><strong>Descrição: </strong>Auxiliar de TI</li>
-                                <li><strong>Requisitos:</strong></li>
-                                <ul id="ul-req" style="list-style-type: circle;">
-                                    <li>Ensino Médio Completo ou Cursando</li>
-                                    <li>Mais de 16 anos</li>
-                                    <li>Morar no Distrito Federal </li>
-                                </ul>
-                            </ul> 
-                            <!--o botão para login devera ficar aqui-->
-                            <div class="boton">
-                                <button id="loginBut4" href="#">aaa</button>
-                            </div>
+                            <h1>Processo para pessoas LGBTQIA+</h1>
+                            <ul>
+                                <li>Data de Fechamento:</li>
+                                <li>Quantidade de Vagas</li>
+                                <li>Descrição:</li>
+                                <li>Requisitos:</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -280,15 +250,18 @@
                     <span class="bg1"></span>
                     <div class="form-wrapper login">
                         <h2 class="title">Login</h2>
-                        <form action="#">
+                        <!-- Alteração: Adição do id "loginForm" para capturar o evento de submit -->
+                        <form id="loginForm">
                             <div class="input-box">
-                                <input type="text" required />
-                                <label for="">Email</label>
+                                <!-- Alteração: Adição do id "loginEmail" para capturar o valor do campo de email -->
+                                <input type="text" id="loginEmail" required />
+                                <label for="loginEmail">Email</label>
                                 <i class="fas fa-user"></i>
                             </div>
                             <div class="input-box">
-                                <input type="password" required />
-                                <label for="">Senha</label>
+                                <!-- Alteração: Adição do id "loginPassword" para capturar o valor do campo de senha -->
+                                <input type="password" id="loginPassword" required />
+                                <label for="loginPassword">Senha</label>
                                 <i class="fas fa-lock"></i>
                             </div>
                             <button class="btn" type="submit">Login</button>
@@ -299,14 +272,14 @@
                             </div>
                         </form>
                     </div>
-
+    
                     <div class="info-wrapper login">
                         <h2>Bem-vindo de Volta!</h2>
                         <p>Faça login na sua conta e veja seus processos</p>
                     </div>
-
+    
                     <span class="bg2"></span>
-
+    
                     <div class="form-wrapper register">
                         <h2 class="title">Criar Conta</h2>
                         <form action="#">
@@ -333,7 +306,7 @@
                             </div>
                         </form>
                     </div>
-
+    
                     <div class="info-wrapper register">
                         <h2>Seja Bem-Vindo(a)!</h2>
                         <p>Crie uma conta para se inscrever em nossos processos seletivos</p>
@@ -377,6 +350,8 @@
     <script src="../script/info.js"></script>
     <script src="../script/login.js"></script>
     <script src="../script/modal_login.js"></script>
+    <script src="../script/ADM.js"></script>
+    
 
 </body>
 
