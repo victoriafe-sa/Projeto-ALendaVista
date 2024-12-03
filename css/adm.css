@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(125deg, rgba(230, 230, 250, 1), rgba(216, 191, 216, 1) 89%);
+  }
+
+  .info-candidatos {
+    margin-bottom: 20px;
+  }
+
+  .cota-select {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cota-select p {
+    font-weight: bold;
+  }
+
+  .cota-select select {
+    margin-left: 25px;
+    width: 9em;
+    padding: 10px;
+    border: 1px solid #0000008c;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: rgba(238, 223, 232, 0.4);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+
+  th,
+  td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 10%;
+  }
+
+  th {
+    background-color: #f4f4f4;
+  }
+
+  td button{
+    padding: 5px;
+    border: 1px solid #0000008c;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+
+  #button-edit{
+    background-color: rgba(74, 142, 219, 0.39);
+  }
+  #button-excluir{
+    background-color: rgba(149, 96, 170, 0.301);
+  }
