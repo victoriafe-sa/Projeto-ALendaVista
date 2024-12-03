@@ -17,4 +17,5 @@ function validarIdade() {
 
 function enviarEmail() {
     alert("Inscrição realizada com sucesso! Verifique seu email para mais informações.");
+    document.getElementById()
 }

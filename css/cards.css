@@ -19,12 +19,12 @@
 }
 .card_mpR .image_mpR img {
     width: 100%;
-    transition: .5s;
+    transition: 1s;
 }
 .card_mpR:hover .image_mpR img {
     opacity: .5;
     transform: translateX(30%);
-    transition: 2s;
+    transition: 1s;
     opacity: auto;
 }
 .card_mpR .details_mpR {
@@ -40,7 +40,7 @@
     transform: perspective(2000px) rotateY(-90deg);
     color: white;
 	border-radius: 30px;
-    transition: 2s;
+    transition: 1s;
     
 }
 .card_mpR:hover .details_mpR {
@@ -89,4 +89,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.boton{
+    display: flex;
+    justify-content: center;
+}
+#loginBut1,#loginBut2,#loginBut3,#loginBut4{
+    width: 50%;
+    padding: 9px;
+    background-color:#9451d8bd;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px 0 20px ;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: 1s;
+}
+#loginBut1:hover,#loginBut2:hover,#loginBut3:hover,#loginBut4:hover{
+    width: 52%;
+    padding: 10px;
+    background-color:#b04ac4bd;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 0 20px 0 20px ;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: 1s;
 }
