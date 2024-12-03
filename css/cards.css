@@ -40,7 +40,7 @@
     transform: perspective(2000px) rotateY(-90deg);
     color: white;
 	border-radius: 30px;
-    transition: 2s;
+    transition: 1s;
     
 }
 .card_mpR:hover .details_mpR {
