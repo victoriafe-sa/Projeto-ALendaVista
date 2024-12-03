@@ -24,7 +24,7 @@ function handleLogin(event) {
 
     // Verifica se as credenciais estão corretas
     if (email === storedAdminUser.email && password === storedAdminUser.password) {
-        window.location.href = 'form.html';  // Redireciona para o form.html
+        window.location.href = 'adm.html';  // Redireciona para o form.html
     } else {
         alert('Email ou senha inválidos');
     }
