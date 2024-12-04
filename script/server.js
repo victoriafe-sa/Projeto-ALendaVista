@@ -29,7 +29,7 @@ db.connect(err =>{
 
 //Rota GET para listar todas os candidatos
 app.get('/api/candidatos', (req, res) =>{
-    db.query('SELECT * FROM Cadidato', (err, results) =>{
+    db.query('SELECT * FROM Candidato', (err, results) =>{
         if (err) {
             console.error('Erro ao buscar dados:', err);
             res.status(500).send('Erro ao buscar dados');
@@ -42,7 +42,7 @@ app.get('/api/candidatos', (req, res) =>{
 // Rota POST para adicionar um novo candidato
 app.post(`/api/candidatos`, (req,res) => {
     const {nome, cpf, data_nascimento, email, endereco, telefone, cota_candidato} = req.body;
-    const sql = 'INSERT INTO Anime (nome, cpf, data_nascimento, email, endereco, telefone, cota_candidatoz) VALUES (?, ?, ?, ?, ?, ?, ?)';
+    const sql = 'INSERT INTO Candidato (nome, cpf, data_nascimento, email, endereco, telefone, cota_candidato) VALUES (?, ?, ?, ?, ?, ?, ?)';
     db.query(sql, [nome, cpf, data_nascimento, email, endereco, telefone, cota_candidato], (err, result) => {
         if (err) {
             console.error('Erro ao inserir dados:',err);
@@ -54,7 +54,7 @@ app.post(`/api/candidatos`, (req,res) => {
 });
 
 // Rota PUT para atualizar um candidato existente
-app.put('/api/cadidatos/:id', (req,res) => {
+app.put('/api/candidatos/:id', (req,res) => {
     const{id} = req.params;
     const {nome, cpf, data_nascimento, email, endereco, telefone, cota_candidato} = req.body;
     const sql = 'UPDATE Candidato SET nome = ?, cpf = ?, data_nascimento = ?, email = ?, endereco = ?, telefone = ?, cota_candidato = ? WHERE id_candidato = ?';
@@ -69,7 +69,7 @@ app.put('/api/cadidatos/:id', (req,res) => {
 });
 
 // Rota DELETE para remover um candidato
-app.delete('/api/candidato/:id', (req,res) =>{
+app.delete('/api/candidatos/:id', (req,res) =>{
     const{id} = req.params;
     const sql = 'DELETE FROM Candidato WHERE id_candidato = ?';
     db.query(sql, [id], (err,result) => {
@@ -83,7 +83,7 @@ app.delete('/api/candidato/:id', (req,res) =>{
 });
 
 //Iniciando o servidor na porta 3000
-const PORT = 5566; // porta mudada para 5566 pois a 3000 não estava fucionando(mudado no script também)
+const PORT = 5577; // porta mudada para 5566 pois a 3000 não estava fucionando(mudado no script também)
 app.listen(PORT, () => {
     console.log(`Servidor rodando em http://localhost:${PORT}`);
 });

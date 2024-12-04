@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="" onsubmit="return validarIdade()">
+    <form action="" onsubmit="return validarIdade()" id="candidato-form">
         <fieldset>
             <legend>Cadastro de Candidato</legend>
 
@@ -34,7 +34,7 @@
             <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
 
             <label for="cota">Cota:</label>
-            <select name="cota" id="cota" required>
+            <select name="cota" id="cota_candidato" required>
                 <option value="" disabled selected>Selecione uma opção</option>
                 <option value="PCD">PCD</option>
                 <option value="PPI">PPI</option>
@@ -47,6 +47,7 @@
     </form>
 
     <script src="../script/form.js"></script>
+    <script src="../script/script.js"></script>
 </body>
 
 </html>
