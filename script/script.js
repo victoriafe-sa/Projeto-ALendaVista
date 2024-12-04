@@ -56,7 +56,7 @@ document.getElementById('candidato-form').addEventListener('submit', (e) => {
 
 
 function deleteCandidato(id) {
-    fetch(`http://localhost:5566/api/candidatos/${id}`, { method: 'DELETE' })
+    fetch(`http://localhost:5577/api/candidatos/${id}`, { method: 'DELETE' })
         .then(() => loadCandidatos())
         .catch(error => console.error('Erro:', error));
 }
