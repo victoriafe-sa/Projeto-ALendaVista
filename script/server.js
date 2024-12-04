@@ -82,6 +82,7 @@ app.delete('/api/candidatos/:id', (req,res) =>{
     });
 });
 
+
 //Iniciando o servidor na porta 3000
 const PORT = 5577; // porta mudada para 5566 pois a 3000 não estava fucionando(mudado no script também)
 app.listen(PORT, () => {

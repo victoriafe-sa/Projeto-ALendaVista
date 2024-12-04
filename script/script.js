@@ -10,10 +10,11 @@ function loadCandidatos() {
             list.innerHTML = '';
             
             data.forEach(candidato => {
+                const dataNascimento = new Date(candidato.data_nascimento).toLocaleDateString('pt-BR');
                 list.innerHTML += `                
                 <tr>
                     <td>${candidato.nome}</td>
-                    <td>${candidato.data_nascimento}</td>
+                    <td>${dataNascimento}</td>
                     <td>${candidato.cpf}</td>
                     <td>${candidato.telefone}</td>
                     <td>${candidato.email}</td>
@@ -55,7 +56,7 @@ document.getElementById('candidato-form').addEventListener('submit', (e) => {
 
 
 function deleteCandidato(id) {
-    fetch(`http://localhost:5577/api/candidato/${id}`, { method: 'DELETE' })
+    fetch(`http://localhost:5566/api/candidatos/${id}`, { method: 'DELETE' })
         .then(() => loadCandidatos())
         .catch(error => console.error('Erro:', error));
 }
