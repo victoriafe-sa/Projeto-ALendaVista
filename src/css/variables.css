@@ -1,0 +1,117 @@
+/* ============================================
+   DESIGN TOKENS — A LendaVista
+   Todos os valores centralizados aqui.
+   ============================================ */
+
+:root {
+  /* ——— Cores Primárias ——— */
+  --clr-primary-900: #1a0525;
+  --clr-primary-800: #2e0a3e;
+  --clr-primary-700: #3a0368;
+  --clr-primary-600: #521a6b;
+  --clr-primary-500: #6b2d8b;
+  --clr-primary-400: #8e44ad;
+  --clr-primary-300: #9b59b6;
+  --clr-primary-200: #c39bd3;
+  --clr-primary-100: #e8daef;
+  --clr-primary-50:  #f5eef8;
+
+  /* ——— Cores de Destaque ——— */
+  --clr-accent-magenta: #e91e9c;
+  --clr-accent-pink: #fedbfc;
+  --clr-accent-violet: #9451d8;
+  --clr-accent-glow: rgba(142, 68, 173, 0.4);
+
+  /* ——— Neutros ——— */
+  --clr-white: #ffffff;
+  --clr-gray-100: #f8f9fa;
+  --clr-gray-200: #e9ecef;
+  --clr-gray-300: #dee2e6;
+  --clr-gray-600: #6c757d;
+  --clr-gray-800: #343a40;
+  --clr-gray-900: #212529;
+  --clr-black: #000000;
+
+  /* ——— Gradientes ——— */
+  --gradient-hero: linear-gradient(135deg, var(--clr-accent-pink) 0%, var(--clr-primary-600) 100%);
+  --gradient-dark: linear-gradient(135deg, var(--clr-primary-900) 0%, var(--clr-primary-700) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(58, 3, 104, 0.9), rgba(82, 26, 107, 0.85));
+  --gradient-glass: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+  --gradient-btn: linear-gradient(135deg, var(--clr-accent-violet), var(--clr-accent-magenta));
+
+  /* ——— Tipografia ——— */
+  --ff-body: 'Poppins', sans-serif;
+  --ff-display: 'Limelight', cursive;
+
+  --fs-xs:   0.75rem;   /* 12px */
+  --fs-sm:   0.875rem;  /* 14px */
+  --fs-base: 1rem;      /* 16px */
+  --fs-md:   1.125rem;  /* 18px */
+  --fs-lg:   1.25rem;   /* 20px */
+  --fs-xl:   1.5rem;    /* 24px */
+  --fs-2xl:  2rem;      /* 32px */
+  --fs-3xl:  2.5rem;    /* 40px */
+  --fs-4xl:  3rem;      /* 48px */
+  --fs-5xl:  4rem;      /* 64px */
+
+  --fw-light:    300;
+  --fw-regular:  400;
+  --fw-medium:   500;
+  --fw-semibold: 600;
+  --fw-bold:     700;
+
+  /* ——— Espaçamento (8px grid) ——— */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.5rem;    /* 24px */
+  --space-6: 2rem;      /* 32px */
+  --space-7: 2.5rem;    /* 40px */
+  --space-8: 3rem;      /* 48px */
+  --space-10: 4rem;     /* 64px */
+  --space-12: 5rem;     /* 80px */
+  --space-16: 8rem;     /* 128px */
+
+  /* ——— Border Radius ——— */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 30px;
+  --radius-full: 9999px;
+
+  /* ——— Sombras ——— */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.2);
+  --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.3);
+  --shadow-glow: 0 0 30px var(--clr-accent-glow);
+  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.12);
+
+  /* ——— Glass Effect ——— */
+  --glass-bg: rgba(255, 255, 255, 0.08);
+  --glass-border: rgba(255, 255, 255, 0.15);
+  --glass-blur: 16px;
+
+  /* ——— Transições ——— */
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  --transition-modal: 0.7s ease;
+
+  /* ——— Z-Index Scale ——— */
+  --z-header: 100;
+  --z-modal-overlay: 200;
+  --z-modal: 300;
+
+  /* ——— Container ——— */
+  --container-max: 1200px;
+  --container-padding: var(--space-5);
+}
+
+/* ——— Breakpoints (referência, usados em @media) ———
+   Mobile:  < 576px
+   Tablet:  576px – 768px
+   Desktop: 768px – 1024px
+   Wide:    > 1024px
+   ——————————————————————————————————————————————— */

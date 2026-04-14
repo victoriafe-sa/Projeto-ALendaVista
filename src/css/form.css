@@ -1,0 +1,237 @@
+/* ============================================
+   FORM — Seção de Contato
+   ============================================ */
+
+.contact-section {
+  padding: var(--space-12) 0;
+}
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: var(--space-7);
+  border-radius: var(--radius-xl);
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--shadow-glass);
+}
+
+/* ——— Lado esquerdo: título ——— */
+
+.contact__heading {
+  font-family: var(--ff-display);
+  font-size: var(--fs-3xl);
+  line-height: 1.2;
+  background: linear-gradient(135deg, var(--clr-white), var(--clr-accent-pink));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ——— Lado direito: formulário ——— */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.contact-form__input,
+.contact-form__textarea,
+.contact-form__select {
+  width: 100%;
+  padding: var(--space-3) var(--space-4);
+  background: rgba(39, 15, 50, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-sm);
+  color: var(--clr-white);
+  font-size: var(--fs-sm);
+  transition: border-color var(--transition-fast),
+              box-shadow var(--transition-fast);
+  outline: none;
+}
+
+.contact-form__input::placeholder,
+.contact-form__textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-form__input:focus,
+.contact-form__textarea:focus,
+.contact-form__select:focus {
+  border-color: var(--clr-accent-violet);
+  box-shadow: 0 0 12px rgba(148, 81, 216, 0.3);
+}
+
+.contact-form__select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: var(--space-8);
+}
+
+.contact-form__select option {
+  background-color: var(--clr-primary-900);
+  color: var(--clr-white);
+}
+
+.contact-form__textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+/* ——— Botões ——— */
+
+.contact-form__buttons {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.contact-form__btn {
+  flex: 1;
+  padding: var(--space-3) var(--space-5);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-white);
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.contact-form__btn--whatsapp {
+  background: linear-gradient(135deg, #25d366, #128c7e);
+}
+
+.contact-form__btn--email {
+  background: var(--gradient-btn);
+}
+
+.contact-form__btn:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ============================================
+   FORM PAGE — Cadastro de Candidato (pages/form.html)
+   ============================================ */
+
+.page-form-body {
+  background: var(--gradient-hero);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.candidate-form-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-7) var(--space-5);
+}
+
+.candidate-form {
+  background: var(--clr-white);
+  padding: var(--space-7);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  width: 100%;
+  max-width: 500px;
+}
+
+.candidate-form fieldset {
+  border: none;
+}
+
+.candidate-form legend {
+  font-size: var(--fs-xl);
+  font-weight: var(--fw-semibold);
+  margin-bottom: var(--space-4);
+  color: var(--clr-primary-400);
+}
+
+.candidate-form label {
+  display: block;
+  font-size: var(--fs-sm);
+  margin-bottom: var(--space-1);
+  color: var(--clr-gray-600);
+}
+
+.candidate-form input,
+.candidate-form select {
+  width: 100%;
+  padding: var(--space-3);
+  margin-bottom: var(--space-4);
+  border: 1px solid var(--clr-gray-300);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-base);
+  color: var(--clr-gray-900);
+  transition: border-color var(--transition-fast);
+}
+
+.candidate-form input:focus,
+.candidate-form select:focus {
+  border-color: var(--clr-primary-400);
+  outline: none;
+  box-shadow: 0 0 8px rgba(142, 68, 173, 0.2);
+}
+
+.candidate-form input::placeholder {
+  color: var(--clr-gray-300);
+}
+
+.candidate-form__submit {
+  width: 100%;
+  padding: var(--space-3);
+  background: var(--gradient-btn);
+  color: var(--clr-white);
+  font-size: var(--fs-base);
+  font-weight: var(--fw-semibold);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.candidate-form__submit:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ——— Responsivo ——— */
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+    padding: var(--space-5);
+  }
+
+  .contact__heading {
+    font-size: var(--fs-2xl);
+    text-align: center;
+  }
+
+  .contact-form__buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-wrapper {
+    padding: var(--space-4);
+  }
+
+  .candidate-form {
+    padding: var(--space-5);
+  }
+}

@@ -1,0 +1,201 @@
+/* ============================================
+   CARDS — Vagas de Emprego
+   ============================================ */
+
+.jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6);
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+.job-card {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transition: transform 0.4s ease,
+              box-shadow 0.4s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-xl);
+}
+
+/* ——— Imagem ——— */
+
+.job-card__image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.job-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.job-card:hover .job-card__image img {
+  transform: scale(1.1) translateX(15%);
+  opacity: 0.6;
+}
+
+/* ——— Label da categoria (sempre visível) ——— */
+
+.job-card__label {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: var(--space-8) var(--space-5) var(--space-5);
+  background: linear-gradient(0deg, rgba(26, 5, 37, 0.9) 0%, transparent 100%);
+  z-index: 2;
+  transition: opacity 0.3s ease;
+}
+
+.job-card:hover .job-card__label {
+  opacity: 0;
+}
+
+.job-card__label-title {
+  font-family: var(--ff-body);
+  font-size: var(--fs-md);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-white);
+  line-height: 1.4;
+}
+
+/* ——— Overlay com detalhes (hover rotateY) ——— */
+
+.job-card__details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  height: 100%;
+  background: var(--gradient-card);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 30px;
+  transform-origin: left;
+  transform: perspective(2000px) rotateY(-90deg);
+  transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-5);
+  z-index: 3;
+}
+
+.job-card:hover .job-card__details {
+  transform: perspective(2000px) rotateY(0deg);
+}
+
+.job-card__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.job-card__info-item {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.job-card__info-item strong {
+  color: var(--clr-accent-pink);
+}
+
+.job-card__info-item:first-child {
+  margin-top: var(--space-2);
+}
+
+/* Sub-lista de requisitos */
+.job-card__requirements {
+  margin-top: var(--space-2);
+  margin-left: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.job-card__requirements li {
+  font-size: var(--fs-xs);
+  color: rgba(255, 255, 255, 0.75);
+  position: relative;
+  padding-left: var(--space-3);
+}
+
+.job-card__requirements li::before {
+  content: '○';
+  position: absolute;
+  left: 0;
+  color: var(--clr-accent-magenta);
+  font-size: 8px;
+  top: 4px;
+}
+
+/* Botão Inscreva-se */
+.job-card__cta {
+  display: block;
+  width: fit-content;
+  margin: var(--space-5) auto 0;
+  padding: var(--space-2) var(--space-6);
+  background: var(--gradient-btn);
+  color: var(--clr-white);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  border-radius: var(--radius-full);
+  transition: transform var(--transition-fast),
+              box-shadow var(--transition-fast);
+}
+
+.job-card__cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(233, 30, 156, 0.4);
+}
+
+/* ——— Responsivo ——— */
+
+@media (max-width: 768px) {
+  .jobs-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--space-5);
+  }
+
+  .job-card {
+    height: 380px;
+  }
+
+  .job-card__details {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .jobs-grid {
+    grid-template-columns: 1fr;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .job-card {
+    height: 400px;
+  }
+
+  .job-card__details {
+    width: 85%;
+    padding: var(--space-4);
+  }
+}

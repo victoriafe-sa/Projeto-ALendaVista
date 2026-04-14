@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cadastro de candidato — A LendaVista. Preencha seus dados para se inscrever em nossos processos seletivos.">
+  <title>Cadastro | A LendaVista</title>
+
+  <link rel="icon" href="../public/img/logotipo.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../src/css/variables.css">
+  <link rel="stylesheet" href="../src/css/base.css">
+  <link rel="stylesheet" href="../src/css/header.css">
+  <link rel="stylesheet" href="../src/css/form.css">
+</head>
+
+<body class="page-form-body">
+
+  <!-- HEADER -->
+  <header class="site-header scrolled">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Voltar para página inicial">
+        <img src="../public/img/logotipo.png" alt="Logo A LendaVista" class="logo__img">
+        <span class="logo__text">A LendaVista</span>
+      </a>
+      <nav class="nav" aria-label="Navegação">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Início</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="candidate-form-wrapper">
+    <form class="candidate-form" id="candidateForm" onsubmit="return validarIdade()">
+      <fieldset>
+        <legend>Cadastro de Candidato</legend>
+
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="name" placeholder="Nome Completo" required>
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="date" id="data_nascimento" name="data_nascimento" required>
+
+        <label for="cpf">CPF:</label>
+        <input type="tel" id="cpf" name="cpf" placeholder="CPF" required maxlength="11" minlength="11">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required maxlength="11" minlength="9">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="endereco">Endereço Completo:</label>
+        <input type="text" id="endereco" name="endereco" placeholder="Endereço" required>
+
+        <label for="cota_candidato">Cota:</label>
+        <select name="cota" id="cota_candidato" required>
+          <option value="" disabled selected>Selecione uma opção</option>
+          <option value="PCD">PCD</option>
+          <option value="PPI">PPI</option>
+          <option value="PERIFERIA">PdP</option>
+          <option value="LGBTQIA+">LGBTQIA+</option>
+        </select>
+      </fieldset>
+
+      <button type="submit" class="candidate-form__submit">Enviar Cadastro</button>
+    </form>
+  </main>
+
+  <script>
+    function validarIdade() {
+      const dataNascimento = document.getElementById('data_nascimento').value;
+      const nascimento = new Date(dataNascimento);
+      const hoje = new Date();
+      const idade = hoje.getFullYear() - nascimento.getFullYear();
+      const m = hoje.getMonth() - nascimento.getMonth();
+
+      if (idade < 18 || (idade === 18 && m < 0)) {
+        alert('Você precisa ter pelo menos 18 anos para se inscrever.');
+        return false;
+      }
+
+      alert('Inscrição realizada com sucesso! Verifique seu email para mais informações.');
+      window.location.href = '../index.html';
+      return false;
+    }
+  </script>
+</body>
+
+</html>

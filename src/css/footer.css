@@ -1,0 +1,248 @@
+/* ============================================
+   FOOTER — Grid Layout Moderno
+   ============================================ */
+
+.site-footer {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.3) 20%, rgba(0, 0, 0, 0.6) 100%);
+  padding: var(--space-8) 0 var(--space-5);
+  margin-top: var(--space-10);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: var(--space-6);
+  align-items: center;
+}
+
+/* ——— Logo no Footer ——— */
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.footer__logo img {
+  width: 45px;
+  height: auto;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+.footer__logo-text {
+  font-family: var(--ff-display);
+  font-size: var(--fs-md);
+  color: var(--clr-white);
+}
+
+/* ——— Links ——— */
+
+.footer__links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-5);
+}
+
+.footer__link {
+  font-size: var(--fs-sm);
+  color: rgba(255, 255, 255, 0.7);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.footer__link::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--clr-accent-pink);
+  transition: width var(--transition-base);
+}
+
+.footer__link:hover {
+  color: var(--clr-white);
+}
+
+.footer__link:hover::after {
+  width: 100%;
+}
+
+/* ——— Redes Sociais ——— */
+
+.footer__socials {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.footer__social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transition: all var(--transition-fast);
+}
+
+.footer__social-link img {
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+  transition: transform var(--transition-fast);
+}
+
+.footer__social-link:hover {
+  background: var(--gradient-btn);
+  border-color: transparent;
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-glow);
+}
+
+.footer__social-link:hover img {
+  transform: scale(1.1);
+}
+
+/* ——— Copyright ——— */
+
+.footer__bottom {
+  text-align: center;
+  margin-top: var(--space-6);
+  padding-top: var(--space-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer__copyright {
+  font-size: var(--fs-xs);
+  color: rgba(255, 255, 255, 0.4);
+}
+
+/* ——— Responsivo ——— */
+
+@media (max-width: 768px) {
+  .footer-inner {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: var(--space-5);
+  }
+
+  .footer__logo {
+    justify-content: center;
+  }
+
+  .footer__links {
+    gap: var(--space-3);
+  }
+
+  .footer__socials {
+    justify-content: center;
+  }
+}
+
+/* ============================================
+   ADM PAGE — Estilos específicos da tabela admin
+   ============================================ */
+
+.page-adm-body {
+  background: linear-gradient(135deg, rgba(230, 230, 250, 1), rgba(216, 191, 216, 1));
+  color: var(--clr-gray-900);
+  min-height: 100vh;
+}
+
+.adm-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-5);
+}
+
+.adm-content h1 {
+  text-align: center;
+  color: var(--clr-primary-700);
+  margin-bottom: var(--space-5);
+}
+
+.cota-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-5);
+}
+
+.cota-filter label {
+  font-weight: var(--fw-semibold);
+  color: var(--clr-gray-800);
+}
+
+.cota-filter select {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-base);
+  background: rgba(238, 223, 232, 0.4);
+  color: var(--clr-gray-800);
+}
+
+.adm-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--clr-white);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.adm-table th,
+.adm-table td {
+  padding: var(--space-3) var(--space-4);
+  text-align: center;
+  border-bottom: 1px solid var(--clr-gray-200);
+  font-size: var(--fs-sm);
+}
+
+.adm-table th {
+  background: var(--clr-primary-600);
+  color: var(--clr-white);
+  font-weight: var(--fw-semibold);
+  text-transform: uppercase;
+  font-size: var(--fs-xs);
+  letter-spacing: 1px;
+}
+
+.adm-table tr:hover td {
+  background: var(--clr-primary-50);
+}
+
+.adm-table .btn-edit,
+.adm-table .btn-delete {
+  padding: var(--space-1) var(--space-3);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-xs);
+  font-weight: var(--fw-medium);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.adm-table .btn-edit {
+  background: rgba(74, 142, 219, 0.2);
+  color: #2563eb;
+}
+
+.adm-table .btn-edit:hover {
+  background: rgba(74, 142, 219, 0.4);
+}
+
+.adm-table .btn-delete {
+  background: rgba(149, 96, 170, 0.2);
+  color: var(--clr-primary-600);
+  margin-left: var(--space-2);
+}
+
+.adm-table .btn-delete:hover {
+  background: rgba(149, 96, 170, 0.4);
+}

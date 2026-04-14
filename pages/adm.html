@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Painel administrativo A LendaVista — Gerenciamento de candidatos cadastrados.">
+  <title>Administrador | A LendaVista</title>
+
+  <link rel="icon" href="../public/img/logotipo.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../src/css/variables.css">
+  <link rel="stylesheet" href="../src/css/base.css">
+  <link rel="stylesheet" href="../src/css/header.css">
+  <link rel="stylesheet" href="../src/css/footer.css">
+</head>
+
+<body class="page-adm-body">
+
+  <!-- HEADER -->
+  <header class="site-header scrolled">
+    <div class="container header-inner">
+      <a href="../index.html" class="logo" aria-label="Voltar para página inicial">
+        <img src="../public/img/logotipo.png" alt="Logo A LendaVista" class="logo__img">
+        <span class="logo__text">A LendaVista</span>
+      </a>
+      <nav class="nav" aria-label="Navegação admin">
+        <ul class="nav__list">
+          <li><a href="../index.html" class="nav__link">Início</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="adm-content" style="padding-top: 100px;">
+    <h1>Candidatos Cadastrados</h1>
+
+    <div class="cota-filter">
+      <label for="filtroSelect">Selecione a cota:</label>
+      <select id="filtroSelect" onchange="filtrarCotas()">
+        <option value="todos" selected>Mostrar Todos</option>
+        <option value="PCDs">PCDs</option>
+        <option value="PdP">PdP</option>
+        <option value="PPI">PPI</option>
+        <option value="LGBTQIA+">LGBTQIA+</option>
+      </select>
+    </div>
+
+    <table class="adm-table" id="tabelaCotas">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>Data de Nascimento</th>
+          <th>CPF</th>
+          <th>Telefone</th>
+          <th>Email</th>
+          <th>Endereço</th>
+          <th>Cota</th>
+          <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody id="candidato-list">
+        <tr>
+          <td>João Silva</td>
+          <td>1990-05-15</td>
+          <td>12345678901</td>
+          <td>11987654321</td>
+          <td>joao.silva@email.com</td>
+          <td>Rua das Flores, 123</td>
+          <td>PPI</td>
+          <td>
+            <button class="btn-edit">Editar</button>
+            <button class="btn-delete">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Maria Santos</td>
+          <td>1995-03-22</td>
+          <td>23456789012</td>
+          <td>21987654321</td>
+          <td>maria.santos@email.com</td>
+          <td>Av. Central, 456</td>
+          <td>PdP</td>
+          <td>
+            <button class="btn-edit">Editar</button>
+            <button class="btn-delete">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Carlos Almeida</td>
+          <td>1988-07-08</td>
+          <td>34567890123</td>
+          <td>31987654321</td>
+          <td>carlos.almeida@email.com</td>
+          <td>Praça Verde, 789</td>
+          <td>PCDs</td>
+          <td>
+            <button class="btn-edit">Editar</button>
+            <button class="btn-delete">Excluir</button>
+          </td>
+        </tr>
+        <tr>
+          <td>Ana Pereira</td>
+          <td>2000-12-30</td>
+          <td>45678901234</td>
+          <td>41987654321</td>
+          <td>ana.pereira@email.com</td>
+          <td>Estrada do Sol, 101</td>
+          <td>LGBTQIA+</td>
+          <td>
+            <button class="btn-edit">Editar</button>
+            <button class="btn-delete">Excluir</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+
+  <script>
+    function filtrarCotas() {
+      const filtro = document.getElementById('filtroSelect').value;
+      const tabela = document.getElementById('tabelaCotas');
+      const linhas = tabela.querySelector('tbody').querySelectorAll('tr');
+
+      linhas.forEach(linha => {
+        const cota = linha.querySelectorAll('td')[6]?.textContent;
+        linha.style.display = (filtro === 'todos' || cota === filtro) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+
+</html>

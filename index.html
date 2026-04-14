@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A LendaVista — Empresa de tecnologia que acredita na diversidade e inclusão, oferecendo oportunidades para comunidades sub-representadas. Desenvolvimento web, apps e marketing digital.">
+  <meta name="theme-color" content="#521A6B">
+
+  <title>A LendaVista | Tecnologia, Diversidade &amp; Inclusão</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="public/img/logotipo.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Limelight&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome (ícones do modal) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS Modular -->
+  <link rel="stylesheet" href="src/css/variables.css">
+  <link rel="stylesheet" href="src/css/base.css">
+  <link rel="stylesheet" href="src/css/header.css">
+  <link rel="stylesheet" href="src/css/hero.css">
+  <link rel="stylesheet" href="src/css/sections.css">
+  <link rel="stylesheet" href="src/css/cards.css">
+  <link rel="stylesheet" href="src/css/form.css">
+  <link rel="stylesheet" href="src/css/modal.css">
+  <link rel="stylesheet" href="src/css/footer.css">
+</head>
+
+<body>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Página inicial A LendaVista">
+        <img src="public/img/logotipo.png" alt="Logo A LendaVista" class="logo__img">
+        <span class="logo__text">A LendaVista</span>
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+
+      <nav class="nav" id="mainNav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#hero" class="nav__link active">Início</a></li>
+          <li><a href="#servicos" class="nav__link">Serviços</a></li>
+          <li><a href="#vagas" class="nav__link">Trabalhe Conosco</a></li>
+          <li><a href="#contato" class="nav__link">Contato</a></li>
+          <li><a href="#" class="nav__link nav__link--cta" data-open-modal>Login</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-overlay" id="navOverlay"></div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <video class="hero__video" autoplay loop muted playsinline poster="public/img/desig.mp4">
+        <source src="public/img/desig.mp4" type="video/mp4">
+      </video>
+
+      <div class="hero__content">
+        <h1 class="hero__title">Nosso sucesso é<br>o seu sucesso</h1>
+        <p class="hero__subtitle">
+          Acreditamos no poder da diversidade e da inclusão, oferecendo oportunidades para pessoas
+          de periferia, PPI, LGBTQIA+ e PCDs, integrando tecnologia de ponta para construir juntos
+          um futuro mais acessível, criativo e transformador.
+        </p>
+        <a href="#servicos" class="hero__cta">Conheça Nossos Serviços ↓</a>
+      </div>
+
+      <div class="hero__scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ============ DIVISOR ============ -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============ SERVIÇOS (CARROSSEL) ============ -->
+    <section class="section carousel-section" id="servicos">
+      <h2 class="section__title reveal">Nossos Serviços</h2>
+
+      <div class="carousel reveal">
+        <input type="radio" name="carousel-position" id="carousel1" checked aria-label="Serviço 1">
+        <input type="radio" name="carousel-position" id="carousel2" aria-label="Serviço 2">
+        <input type="radio" name="carousel-position" id="carousel3" aria-label="Serviço 3">
+
+        <div class="carousel__track" id="carouselTrack">
+          <div class="carousel__item">
+            <h3 class="carousel__item-title">Desenvolvimento<br>de WebSites</h3>
+            <p class="carousel__item-text">
+              Criamos um site exclusivo para sua empresa, alinhado às suas ideias. Se não tiver
+              uma visão definida, ajudaremos com sugestões estratégicas para garantir uma presença
+              digital que represente seu negócio com excelência.
+            </p>
+          </div>
+          <div class="carousel__item">
+            <h3 class="carousel__item-title">Criação<br>de Aplicativos</h3>
+            <p class="carousel__item-text">
+              Criamos aplicativos exclusivos para sua empresa, alinhados às suas ideias e
+              necessidades. Ajudamos com sugestões estratégicas para garantir uma solução digital
+              que represente seu negócio com excelência.
+            </p>
+          </div>
+          <div class="carousel__item">
+            <h3 class="carousel__item-title">Produção de<br>Social Media</h3>
+            <p class="carousel__item-text">
+              Gerenciamos as redes sociais da sua empresa com conteúdos personalizados e
+              estratégicos. Ajudamos a criar ações que engajem seu público e ampliem sua
+              presença online.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIVISOR ============ -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============ VANTAGENS ============ -->
+    <section class="section advantages" id="vantagens">
+      <div class="container">
+        <div class="advantages__grid reveal">
+          <div class="advantages__heading-wrapper">
+            <h2 class="advantages__heading">Vantagens dos nossos serviços</h2>
+          </div>
+          <div class="advantages__list">
+            <div class="advantage-card">
+              <div class="advantage-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <div>
+                <h3 class="advantage-card__title">Compromisso com o cliente</h3>
+                <p class="advantage-card__text">Nos comprometemos em entregar um serviço completo e em um curto período, priorizando a qualidade e a satisfação.</p>
+              </div>
+            </div>
+            <div class="advantage-card">
+              <div class="advantage-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                </svg>
+              </div>
+              <div>
+                <h3 class="advantage-card__title">Modernidade</h3>
+                <p class="advantage-card__text">Seu produto terá uma interface moderna e elegante, atraindo mais consumidores e destacando sua marca no mercado.</p>
+              </div>
+            </div>
+            <div class="advantage-card">
+              <div class="advantage-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <line x1="2" y1="12" x2="22" y2="12"></line>
+                  <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="advantage-card__title">Soluções inovadoras</h3>
+                <p class="advantage-card__text">Utilizamos ferramentas atuais e abordagens inovadoras, resolvendo problemas de maneira mais eficiente e criativa.</p>
+              </div>
+            </div>
+            <div class="advantage-card">
+              <div class="advantage-card__icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div>
+                <h3 class="advantage-card__title">Alta Qualidade</h3>
+                <p class="advantage-card__text">Nossos produtos e serviços possuem alta qualidade, com padrões rigorosos e compromisso com a excelência.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIVISOR ============ -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============ TRABALHE CONOSCO ============ -->
+    <section class="section jobs-section" id="vagas">
+      <div class="container">
+        <h2 class="section__title reveal">Trabalhe Conosco</h2>
+
+        <blockquote class="jobs-section__quote reveal">
+          "Uma sociedade inclusiva abraça a diversidade de culturas, habilidades, orientações e identidades,
+          criando ambientes de respeito, empatia e acolhimento, onde as diferenças são celebradas e não temidas."
+        </blockquote>
+
+        <div class="jobs-grid">
+          <!-- Card 1 — PPI -->
+          <article class="job-card reveal">
+            <div class="job-card__image">
+              <img src="public/img/ppi.jpg" alt="Vaga para pessoas pretas, pardas e indígenas">
+            </div>
+            <div class="job-card__label">
+              <p class="job-card__label-title">Processo para pessoas pretas, pardas e indígenas (PPI)</p>
+            </div>
+            <div class="job-card__details">
+              <ul class="job-card__info-list">
+                <li class="job-card__info-item"><strong>Fechamento:</strong> 13/01/2025</li>
+                <li class="job-card__info-item"><strong>Vagas:</strong> 15</li>
+                <li class="job-card__info-item"><strong>Descrição:</strong> Auxiliar de TI</li>
+                <li class="job-card__info-item"><strong>Requisitos:</strong></li>
+              </ul>
+              <ul class="job-card__requirements">
+                <li>Ensino Médio Completo ou Cursando</li>
+                <li>Mais de 16 anos</li>
+                <li>Morar no Distrito Federal</li>
+              </ul>
+              <button class="job-card__cta" data-open-modal aria-label="Inscreva-se para a vaga PPI">Inscreva-se</button>
+            </div>
+          </article>
+
+          <!-- Card 2 — PdP -->
+          <article class="job-card reveal">
+            <div class="job-card__image">
+              <img src="public/img/pdp.jpg" alt="Vaga para pessoas de periferia">
+            </div>
+            <div class="job-card__label">
+              <p class="job-card__label-title">Processo para pessoas de periferia (PdP)</p>
+            </div>
+            <div class="job-card__details">
+              <ul class="job-card__info-list">
+                <li class="job-card__info-item"><strong>Fechamento:</strong> 13/01/2025</li>
+                <li class="job-card__info-item"><strong>Vagas:</strong> 15</li>
+                <li class="job-card__info-item"><strong>Descrição:</strong> Auxiliar de TI</li>
+                <li class="job-card__info-item"><strong>Requisitos:</strong></li>
+              </ul>
+              <ul class="job-card__requirements">
+                <li>Ensino Médio Completo ou Cursando</li>
+                <li>Mais de 16 anos</li>
+                <li>Morar no Distrito Federal</li>
+              </ul>
+              <button class="job-card__cta" data-open-modal aria-label="Inscreva-se para a vaga PdP">Inscreva-se</button>
+            </div>
+          </article>
+
+          <!-- Card 3 — PCDs -->
+          <article class="job-card reveal">
+            <div class="job-card__image">
+              <img src="public/img/pcds.jpg" alt="Vaga para pessoas com deficiência">
+            </div>
+            <div class="job-card__label">
+              <p class="job-card__label-title">Processo para pessoas com deficiência (PCDs)</p>
+            </div>
+            <div class="job-card__details">
+              <ul class="job-card__info-list">
+                <li class="job-card__info-item"><strong>Fechamento:</strong> 13/01/2025</li>
+                <li class="job-card__info-item"><strong>Vagas:</strong> 15</li>
+                <li class="job-card__info-item"><strong>Descrição:</strong> Auxiliar de TI</li>
+                <li class="job-card__info-item"><strong>Requisitos:</strong></li>
+              </ul>
+              <ul class="job-card__requirements">
+                <li>Ensino Médio Completo ou Cursando</li>
+                <li>Mais de 16 anos</li>
+                <li>Morar no Distrito Federal</li>
+              </ul>
+              <button class="job-card__cta" data-open-modal aria-label="Inscreva-se para a vaga PCDs">Inscreva-se</button>
+            </div>
+          </article>
+
+          <!-- Card 4 — LGBTQIA+ -->
+          <article class="job-card reveal">
+            <div class="job-card__image">
+              <img src="public/img/lgbt.jpg" alt="Vaga para pessoas LGBTQIA+">
+            </div>
+            <div class="job-card__label">
+              <p class="job-card__label-title">Processo para pessoas LGBTQIA+</p>
+            </div>
+            <div class="job-card__details">
+              <ul class="job-card__info-list">
+                <li class="job-card__info-item"><strong>Fechamento:</strong> 13/01/2025</li>
+                <li class="job-card__info-item"><strong>Vagas:</strong> 15</li>
+                <li class="job-card__info-item"><strong>Descrição:</strong> Auxiliar de TI</li>
+                <li class="job-card__info-item"><strong>Requisitos:</strong></li>
+              </ul>
+              <ul class="job-card__requirements">
+                <li>Ensino Médio Completo ou Cursando</li>
+                <li>Mais de 16 anos</li>
+                <li>Morar no Distrito Federal</li>
+              </ul>
+              <button class="job-card__cta" data-open-modal aria-label="Inscreva-se para a vaga LGBTQIA+">Inscreva-se</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DIVISOR ============ -->
+    <div class="section-divider" aria-hidden="true"></div>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="section contact-section" id="contato">
+      <div class="container">
+        <div class="contact-wrapper reveal">
+          <div class="contact__heading-wrapper">
+            <h2 class="contact__heading">Solicite mais informações</h2>
+          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" class="contact-form__input" id="contactNome" placeholder="Seu nome" required>
+            <input type="tel" class="contact-form__input" id="contactTelefone" placeholder="Seu telefone" required>
+            <input type="email" class="contact-form__input" id="contactEmail" placeholder="Seu email" required>
+            <select class="contact-form__select" id="contactAssunto" required>
+              <option value="" disabled selected>Informação Desejada</option>
+              <option value="Criação de App">Criação de App</option>
+              <option value="Criação de Site">Criação de Site</option>
+              <option value="Marketing Digital">Marketing Digital</option>
+              <option value="Trabalhar Conosco">Trabalhar Conosco</option>
+            </select>
+            <textarea class="contact-form__textarea" id="contactMensagem" rows="4" placeholder="Sua mensagem" required></textarea>
+            <div class="contact-form__buttons">
+              <button type="button" class="contact-form__btn contact-form__btn--whatsapp" id="btnWhatsapp">
+                Enviar via WhatsApp
+              </button>
+              <button type="button" class="contact-form__btn contact-form__btn--email" id="btnEmail">
+                Enviar via Email
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MODAL LOGIN/CADASTRO ============ -->
+    <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-label="Login ou Criar Conta">
+      <div class="modal">
+        <button class="modal__close" id="modalClose" aria-label="Fechar modal">✕</button>
+
+        <span class="modal__bg1"></span>
+
+        <!-- Formulário de Login -->
+        <div class="modal__form-wrapper modal__form-wrapper--login">
+          <h2 class="modal__title">Login</h2>
+          <form>
+            <div class="modal__input-box">
+              <input type="text" required>
+              <label>Email</label>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="modal__input-box">
+              <input type="password" required>
+              <label>Senha</label>
+              <i class="fas fa-lock"></i>
+            </div>
+            <button class="modal__btn" type="submit">Login</button>
+            <div class="modal__link">
+              <p>Não tem conta? <a href="#" class="signup-link">Criar conta</a></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Info Login -->
+        <div class="modal__info-wrapper modal__info-wrapper--login">
+          <h2>Bem-vindo<br>de Volta!</h2>
+          <p>Faça login na sua conta e veja seus processos</p>
+        </div>
+
+        <span class="modal__bg2"></span>
+
+        <!-- Formulário de Registro -->
+        <div class="modal__form-wrapper modal__form-wrapper--register">
+          <h2 class="modal__title">Criar Conta</h2>
+          <form>
+            <div class="modal__input-box">
+              <input type="email" required>
+              <label>Seu Email</label>
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="modal__input-box">
+              <input type="text" required>
+              <label>Nome Completo</label>
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="modal__input-box">
+              <input type="password" required>
+              <label>Senha</label>
+              <i class="fas fa-lock"></i>
+            </div>
+            <button class="modal__btn" type="submit">Criar Conta</button>
+            <div class="modal__link">
+              <p>Já possui conta? <a href="#" class="login-link">Login</a></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Info Registro -->
+        <div class="modal__info-wrapper modal__info-wrapper--register">
+          <h2>Seja<br>Bem-Vindo(a)!</h2>
+          <p>Crie uma conta para se inscrever em nossos processos seletivos</p>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer__logo">
+          <img src="public/img/logotipo.png" alt="Logo A LendaVista">
+          <span class="footer__logo-text">A LendaVista</span>
+        </div>
+
+        <nav class="footer__links" aria-label="Links do footer">
+          <a href="#hero" class="footer__link">Sobre a empresa</a>
+          <a href="#vagas" class="footer__link">Trabalhe Conosco</a>
+          <a href="#servicos" class="footer__link">Nossos Serviços</a>
+          <a href="#contato" class="footer__link">Contato</a>
+        </nav>
+
+        <div class="footer__socials">
+          <a href="https://api.whatsapp.com/send?phone=5500000000000" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="WhatsApp">
+            <img src="public/img/whats.png" alt="WhatsApp">
+          </a>
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Instagram">
+            <img src="public/img/insta.png" alt="Instagram">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">&copy; 2025 A LendaVista. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="src/js/header.js" defer></script>
+  <script src="src/js/modal.js" defer></script>
+  <script src="src/js/contact.js" defer></script>
+
+</body>
+
+</html>
